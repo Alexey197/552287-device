@@ -12,13 +12,18 @@
   <header class="main-header">
     <nav class="main-navigation">
       <div class="main-navigation-wrapper">
-        <span class="main-header-logo">DEVICE</span>
-        <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="#">Поиск по сайту</a></li>
-          <li class="site-navigation-item"><a href="#">Войти</a></li>
-          <li class="site-navigation-item"><a href="#">Сравнить</a></li>
-          <li class="site-navigation-item"><a href="#">Корзина</a></li>
-        </ul>
+        <a href="#" class="logo"><img class="logo__img" src="img/logo.png" alt="Логотип Device" width="163" height="36"></a>
+        <div class="site-navigation">
+          <div class="form-search">
+            <form action="#" method="get">
+              <input type="search" name="search" class="search" placeholder="Поиск по сайту">
+              <input type="submit" value="Найти">
+            </form>
+          </div>
+          <a class="site-navigation-item" href="#">Войти</a>
+          <a class="site-navigation-item" href="#">Сравнить</a>
+          <a class="site-navigation-item" href="#">Корзина</a>
+        </div>
         <ul class="goods-navigation">
           <li class="goods-navigation-item"><a href="catalog.html">каталог товаров</a></li>
           <li class="goods-navigation-item"><a href="#">доставка</a></li>
@@ -46,6 +51,7 @@
 <main>
   <h1 class="visually-hidden">Device</h1>
   <section class="slider">
+    <h2 class="visually-hidden">Слайдер</h2>
     <div class="container">
       <div class="slider-item slider-first-item">
         <img src="img/slider-1.png" alt="Селфи-палка" width="384" height="486">
@@ -96,9 +102,9 @@
       </div>
     </div>
   </section>
-  <secton class="popular">
+  <section class="popular">
+    <h2 class="visually-hidden">Популярные товары</h2>
     <div class="container">
-      <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-goods">
         <li>
           <p>
@@ -148,10 +154,10 @@
         </li>
       </ul>
     </div>
-  </secton>
+  </section>
   <section class="services">
+    <h2 class="visually-hidden">Сервисы</h2>
     <div class="container services-container">
-      <h2 class="visually-hidden">Сервисы</h2>
       <div class="conditions">
         <ul class="conditions-list">
           <li><a href="#">доставка</a></li>
@@ -160,47 +166,39 @@
         </ul>
       </div>
       <div class="services-delivery services-item">
-        <div class="services-item-wrapper">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-            заработаем, поднимая его на ваш этаж.</p>
-        </div>
-        <p><img src="img/delivery.svg" alt="Доставка" width="136" height="164"></p>
+        <h3>Доставка</h3>
+        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+          заработаем, поднимая его на ваш этаж.</p>
       </div>
       <div class="warranty services-item">
-        <div class="services-item-wrapper">
-          <h3>Гарантия</h3>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
-            новый.Товар, не дом, конечно же.</p>
-        </div>
-        <p><img src="img/warranty.svg" alt="гарантия" width="171" height="194"></p>
+        <h3>Гарантия</h3>
+        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
+          новый.Товар, не дом, конечно же.</p>
       </div>
       <div class="credit services-item">
-        <div class="services-item-wrapper">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
-            кредита. Выгодные для нашего банка, разумеется.</p>
-        </div>
-        <p><img src="img/credit.svg" alt="кредит" width="156" height="186"></p>
+        <h3>Кредит</h3>
+        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+          кредита. Выгодные для нашего банка, разумеется.</p>
       </div>
     </div>
   </section>
   <section class="logotypes">
+    <h2 class="visually-hidden">Логотипы партнеров</h2>
     <div class="container">
-      <h2 class="visually-hidden">Логотипы партнеров</h2>
       <ul class="logotypes-list">
-        <li><a href="#"><img src="img/logo-1.jpg" alt="Логотип партнеров" width="260" height="100"></a></li>
-        <li><a href="#"><img src="img/logo-3.jpg" alt="Логотип партнеров" width="260" height="100"></a></li>
-        <li><a href="#"><img src="img/logo-3-1.jpg" alt="Логотип партнеров" width="260" height="100"></a></li>
-        <li><a href="#"><img src="img/logo-4.jpg" alt="Логотип партнеров" width="260" height="100"></a></li>
+        <li><a href="#"><img src="img/logo-1.png" alt="Логотип партнеров" width="260" height="100"></a></li>
+        <li><a href="#"><img src="img/logo-2.png" alt="Логотип партнеров" width="260" height="100"></a></li>
+        <li><a href="#"><img src="img/logo-3.png" alt="Логотип партнеров" width="260" height="100"></a></li>
+        <li><a href="#"><img src="img/logo-1.png" alt="Логотип партнеров" width="260" height="100"></a></li>
       </ul>
     </div>
   </section>
   <section class="about-us">
+    <h2 class="visually-hidden">О нас</h2>
     <div class="container">
       <div class="about-us-wrapper">
         <div class="info">
-          <h2>О нас</h2>
+          <h3>О нас</h3>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
             компаниями:</p>
@@ -209,14 +207,14 @@
             <li><a href="#">Автотрейдинг</a></li>
             <li><a href="#">ЖелДорЭкспедиция</a></li>
           </ul>
-          <p><b>подробнее о нас</b></p>
+          <a class="about-us-info" href="#">подробнее о нас</a>
         </div>
         <div class="contacts">
-          <h2>Контакты</h2>
+          <h3>Контакты</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
             Всякое бывает.</p>
-          <p><img src="img/map.jpg.png" width="560" height="222" alt="карта"></p>
-          <p><b>напишите нам</b></p>
+          <a href="#"><img src="img/map.jpg.png" width="560" height="222" alt="карта"></a>
+          <a class="about-us-contacts" href="#">напишите нам</a>
         </div>
       </div>
     </div>
@@ -246,6 +244,7 @@
     </button>
   </section>
   <section class="modal modal-map">
+    <h2 class="visually-hidden">Карта</h2>
     <p><img src="img/map-big.jpg" width="994" height="593" alt="Офис компании по адресу ул. Строителей, 15"></p>
     <button class="modal-close" type="button">
       <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
@@ -256,7 +255,6 @@
   </section>
   <footer class="main-footer">
     <div class="container">
-
       <div class="footer-top">
         <span class="logo-footer">DEVICE</span>
         <ul class="footer-user-menu">
@@ -268,7 +266,7 @@
 </svg>
             <span>Войти</span></a></li>
           <li class="footer-middle-item"><a href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.1" id="Layer_1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
 <rect x="8" y="2" width="1.984" height="8"/>
 <rect y="3" width="1.984" height="7"/>
@@ -276,7 +274,7 @@
             </svg>
             <span>Сравнить</span></a></li>
           <li class="footer-middle-item"><a href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.1" id="Layer_1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
 <g>
 	<path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
@@ -312,7 +310,7 @@
         </ul>
         <p class="copyright">
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <svg version="1.1" id="Layer_1.3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
                    <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
                       </svg>
           </a>
