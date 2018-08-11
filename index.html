@@ -10,42 +10,43 @@
 <body>
 <div class="container">
   <header class="main-header">
-    <nav class="main-navigation">
-      <div class="main-navigation-wrapper">
-        <a href="#" class="logo"><img class="logo__img" src="img/logo.png" alt="Логотип Device" width="163" height="36"></a>
-        <div class="site-navigation">
-          <div class="form-search">
-            <form action="#" method="get">
-              <input type="search" name="search" class="search" placeholder="Поиск по сайту">
-              <input type="submit" value="Найти">
-            </form>
-          </div>
-          <a class="site-navigation-item" href="#">Войти</a>
-          <a class="site-navigation-item" href="#">Сравнить</a>
-          <a class="site-navigation-item" href="#">Корзина</a>
+    <div class="main-navigation-wrapper">
+      <div class="logo-wrapper">
+        <a class="logo"><img class="logo__img" src="img/logo.png" alt="Логотип Device" width="163" height="36"></a>
+      </div>
+      <div class="site-navigation">
+        <div class="form-search">
+          <form action="#" method="get">
+            <input type="search" name="search" class="search" placeholder="Поиск по сайту">
+            <input type="submit" value="Найти">
+          </form>
         </div>
+        <a class="site-navigation-item" href="#">Войти</a>
+        <a class="site-navigation-item" href="#">Сравнить</a>
+        <a class="site-navigation-item" href="#">Корзина</a>
+      </div>
+      <nav class="main-navigation">
         <ul class="goods-navigation">
           <li class="goods-navigation-item"><a href="catalog.html">каталог товаров</a></li>
           <li class="goods-navigation-item"><a href="#">доставка</a></li>
           <li class="goods-navigation-item"><a href="#">гарантия</a></li>
-          <li class="goods-navigation-item"><a href="#">контакты</a></li>
+          <li class="goods-navigation-item"><a href="#">контакты</a>
+            <ul class="goods-camera">
+              <li class="appearing-menu-item goods-camera-item"><a href="#">Виртуальная реальность</a></li>
+              <li class="appearing-menu-item goods-camera-item"><a href="#">Моноподы для селфи</a></li>
+              <li class="appearing-menu-item goods-camera-item"><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul class="goods-watch">
+              <li class="appearing-menu-item goods-camera-item"><a href="#">Фитнес-браслеты</a></li>
+              <li class="appearing-menu-item goods-camera-item"><a href="#">Умные часы</a></li>
+            </ul>
+            <ul class="goods-copters">
+              <li class="appearing-menu-item goods-camera-item"><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
         </ul>
-        <div class="appearing-menu">
-          <ul class="goods-camera">
-            <li class="appearing-menu-item goods-camera-item"><a href="#">Виртуальная реальность</a></li>
-            <li class="appearing-menu-item goods-camera-item"><a href="#">Моноподы для селфи</a></li>
-            <li class="appearing-menu-item goods-camera-item"><a href="#">Экшн-камеры</a></li>
-          </ul>
-          <ul class="goods-watch">
-            <li class="appearing-menu-item goods-camera-item"><a href="#">Фитнес-браслеты</a></li>
-            <li class="appearing-menu-item goods-camera-item"><a href="#">Умные часы</a></li>
-          </ul>
-          <ul class="goods-copters">
-            <li class="appearing-menu-item goods-camera-item"><a href="#">Квадрокоптеры</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 </div>
 <main>
@@ -166,19 +167,27 @@
         </ul>
       </div>
       <div class="services-delivery services-item">
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-          заработаем, поднимая его на ваш этаж.</p>
+        <div class="services-item-wrapper">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+            заработаем, поднимая его на ваш этаж.</p>
+        </div>
       </div>
       <div class="warranty services-item">
-        <h3>Гарантия</h3>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
-          новый.Товар, не дом, конечно же.</p>
+        <div class="services-item-wrapper">
+          <h3>Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
+            новый.Товар, не дом, конечно же.</p>
+        </div>
+        <p><img src="img/warranty.svg" alt="гарантия" width="171" height="194"></p>
       </div>
       <div class="credit services-item">
-        <h3>Кредит</h3>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
-          кредита. Выгодные для нашего банка, разумеется.</p>
+        <div class="services-item-wrapper">
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+            кредита. Выгодные для нашего банка, разумеется.</p>
+        </div>
+        <p><img src="img/credit.svg" alt="кредит" width="156" height="186"></p>
       </div>
     </div>
   </section>
@@ -186,10 +195,10 @@
     <h2 class="visually-hidden">Логотипы партнеров</h2>
     <div class="container">
       <ul class="logotypes-list">
-        <li><a href="#"><img src="img/logo-1.png" alt="Логотип партнеров" width="260" height="100"></a></li>
-        <li><a href="#"><img src="img/logo-2.png" alt="Логотип партнеров" width="260" height="100"></a></li>
-        <li><a href="#"><img src="img/logo-3.png" alt="Логотип партнеров" width="260" height="100"></a></li>
-        <li><a href="#"><img src="img/logo-1.png" alt="Логотип партнеров" width="260" height="100"></a></li>
+        <li><a href="#"><img src="img/logo-1.jpg" alt="Логотип партнеров" width="260" height="100"></a></li>
+        <li><a href="#"><img src="img/logo-3.jpg" alt="Логотип партнеров" width="260" height="100"></a></li>
+        <li><a href="#"><img src="img/logo-3-1.jpg" alt="Логотип партнеров" width="260" height="100"></a></li>
+        <li><a href="#"><img src="img/logo-4.jpg" alt="Логотип партнеров" width="260" height="100"></a></li>
       </ul>
     </div>
   </section>

@@ -10,37 +10,43 @@
 <body>
 <div class="container">
   <header class="main-header catalog-page-header">
-    <nav class="main-navigation">
-      <div class="main-navigation-wrapper">
-        <a href="index.html" class="logo"><img class="logo__img" src="img/logo.png" alt="Логотип Device" width="163" height="36"></a>
-        <div class="site-navigation">
-          <a class="site-navigation-item" href="#">Выйти</a>
-          <a  class="site-navigation-user" href="#">Валентин Петухов</a>
-          <a class="site-navigation-item" href="#">Сравнить</a>
-          <a class="site-navigation-item" href="#">Корзина</a>
+    <div class="main-navigation-wrapper">
+      <a href="index.html" class="logo"><img class="logo__img" src="img/logo.png" alt="Логотип Device" width="163"
+                                             height="36"></a>
+      <div class="site-navigation">
+        <a class="site-navigation-user" href="#">Валентин Петухов</a>
+        <a class="site-navigation-item" href="#">Выйти</a>
+        <div class="form-search">
+          <form action="#" method="get">
+            <input type="search" name="search" class="search" placeholder="Поиск по сайту">
+            <input type="submit" value="Найти">
+          </form>
         </div>
+        <a class="site-navigation-item" href="#">Сравнить</a>
+        <a class="site-navigation-item" href="#">Корзина</a>
+      </div>
+      <nav class="main-navigation">
         <ul class="goods-navigation">
           <li class="goods-navigation-item"><a href="catalog.html">каталог товаров</a></li>
           <li class="goods-navigation-item"><a href="#">доставка</a></li>
           <li class="goods-navigation-item"><a href="#">гарантия</a></li>
-          <li class="goods-navigation-item"><a href="#">контакты</a></li>
+          <li class="goods-navigation-item"><a href="#">контакты</a>
+            <ul class="goods-camera">
+              <li class="appearing-menu-item goods-camera-item"><a href="#">Виртуальная реальность</a></li>
+              <li class="appearing-menu-item goods-camera-item"><a href="#">Моноподы для селфи</a></li>
+              <li class="appearing-menu-item goods-camera-item"><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul class="goods-watch">
+              <li class="appearing-menu-item goods-camera-item"><a href="#">Фитнес-браслеты</a></li>
+              <li class="appearing-menu-item goods-camera-item"><a href="#">Умные часы</a></li>
+            </ul>
+            <ul class="goods-copters">
+              <li class="appearing-menu-item goods-camera-item"><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
         </ul>
-        <div class="appearing-menu">
-          <ul class="goods-camera">
-            <li class="appearing-menu-item goods-camera-item"><a href="#">Виртуальная реальность</a></li>
-            <li class="appearing-menu-item goods-camera-item"><a href="#">Моноподы для селфи</a></li>
-            <li class="appearing-menu-item goods-camera-item"><a href="#">Экшн-камеры</a></li>
-          </ul>
-          <ul class="goods-watch">
-            <li class="appearing-menu-item goods-camera-item"><a href="#">Фитнес-браслеты</a></li>
-            <li class="appearing-menu-item goods-camera-item"><a href="#">Умные часы</a></li>
-          </ul>
-          <ul class="goods-copters">
-            <li class="appearing-menu-item goods-camera-item"><a href="#">Квадрокоптеры</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 </div>
 <main>
@@ -70,7 +76,9 @@
   <div class="catalog-columns container">
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
-      <p class="filters-title"><span>Фильтр:</span></p>
+      <div class="filters-title-wrapper">
+        <p class="filters-title">Фильтр:</p>
+      </div>
       <div class="filters-wrapper">
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
@@ -116,22 +124,26 @@
     </section>
     <section class="catalog">
       <div class="catalog-wrapper">
-        <ul class="sorting-list">
-          <li class="sorting-item">сортировка:</li>
-          <li class="sorting-item"><a href="#" class="sorting-link">По цене</a></li>
-          <li class="sorting-item"><a href="#" class="sorting-link">По типу</a></li>
-          <li class="sorting-item"><a href="#" class="sorting-link">По популярности</a></li>
-          <li class="sorting-item"><a href="#" class="sorting-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-              <path fill="#231F20" d="M5.5 0L0 10h11z"/>
-            </svg>
-          </a></li>
-          <li class="sorting-item"><a href="#" class="sorting-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-              <path fill="#231F20" d="M5.5 10L0 0h11"/>
-            </svg>
-          </a></li>
-        </ul>
+        <div class="sorting-list-wrapper">
+          <p class="sorting-item-title">сортировка:</p>
+          <ul class="sorting-list">
+            <li class="sorting-item"><a href="#" class="sorting-link">По цене</a></li>
+            <li class="sorting-item"><a href="#" class="sorting-link">По типу</a></li>
+            <li class="sorting-item"><a href="#" class="sorting-link">По популярности</a></li>
+          </ul>
+          <ul class="sorting-up-down">
+            <li class="sorting-item-up"><a href="#" class="sorting-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+              </svg>
+            </a></li>
+            <li class="sorting-item-down"><a href="#" class="sorting-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 10L0 0h11"/>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <h3>
@@ -293,4 +305,5 @@
 </footer>
 </body>
 </html>
+
 
