@@ -163,10 +163,6 @@
       opacity: 0.6;
   }
 
-
-
-
-
   .form-search::before {
       content: "";
       position: absolute;
@@ -324,23 +320,6 @@
       color: #464646;
   }
 
-  /*.slider-goods-feature {*/
-  /*font-family: Gilroy;*/
-  /*font-size: 36px;*/
-  /*font-weight: 300;*/
-  /*line-height: 48px;*/
-  /*letter-spacing: 0.36px;*/
-  /*}*/
-
-  /*.slider-feature {*/
-  /*font-family: "Open Sans";*/
-  /*font-size: 13px;*/
-  /*font-weight: 300;*/
-  /*line-height: 20px;*/
-  /*letter-spacing: 0.13px;*/
-  /*color: #464646;*/
-  /*}*/
-
   .popular-goods {
       display: flex;
       justify-content: space-between;
@@ -389,15 +368,6 @@
       color: #000000;
   }
 
-  /*.services-item p:first-of-type {*/
-  /*font-family: "Open Sans";*/
-  /*font-size: 15px;*/
-  /*font-weight: 300;*/
-  /*line-height: 30px;*/
-  /*letter-spacing: 0.15px;*/
-  /*color: #464646;*/
-  /*}*/
-
   .services-item p:first-of-type {
       font-family: "Open Sans";
       font-size: 15px;
@@ -412,9 +382,6 @@
       background-repeat: no-repeat;
       background-position: 750px  -50px;
   }
-
-
-
 
   .services {
       background-color: #e5e5e5;
@@ -492,10 +459,6 @@
       display: flex;
       justify-content: start;
   }
-
-
-
-
 
   /*Модальное окно. Личный кабинет*/
 
@@ -683,10 +646,7 @@
       opacity: 0.3;
   }
 
-
-
   /*КАТАЛОГ catalog.html*/
-
 
   .catalog-page-header {
       margin-bottom: 40px;
@@ -756,7 +716,6 @@
       margin-left: 60px;
   }
 
-
   .filters fieldset {
       border: none;
   }
@@ -767,6 +726,7 @@
 
       list-style: none;
   }
+
   .filter fieldset{
       margin: 0;
       padding: 0;
@@ -870,6 +830,7 @@
   .label-new {
       width: 60px;
       height: 61px;
+      
       border: 2px solid #000000;
       border-radius: 50%;
       opacity: 0.1;
