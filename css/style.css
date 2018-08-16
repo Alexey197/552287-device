@@ -78,7 +78,7 @@
       margin-top: 40px;
       position: relative;
 
-      background-color: rgba(240, 197, 46, .5);
+      background-color: #f7e296;
   }
 
   .logo {
@@ -103,7 +103,7 @@
       display: flex;
       min-width: 500px;
       justify-content: flex-end;
-      margin: 43px 60px 0 0;
+      margin: 43px 60px 40px 0;
   }
 
   .form-search {
@@ -237,21 +237,61 @@
       /*padding: 0 60px;*/
   /*}*/
 
-  .goods-navigation {
-      list-style: none;
-      margin: 0;
-      padding: 0;
+  .main-navigation {
+      margin: 0 60px;
   }
 
-  .goods-navigation-item a{
+  .goods-navigation {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+  }
+
+  .goods-navigation-item:nth-of-type(1) {
+      position: relative;
+      margin-right: 322px;
+  }
+
+  .goods-navigation-item:nth-of-type(2) {
+      margin-right: 34px;
+  }
+
+  .goods-navigation-item:nth-of-type(3) {
+      margin-right: auto;
+  }
+
+  .goods-navigation-item>a{
+      display: block;
+
       font-family: "Gilroy - Extra Bold";
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 700;
       line-height: 24px;
       text-transform: uppercase;
       letter-spacing: 3.6px;
       color: #000000;
   }
+
+  .appearing-menu-wrapper {
+      display: none;
+  }
+
+  .goods-navigation-item:nth-of-type(1):hover .appearing-menu-wrapper {
+      position: absolute;
+      top: 23px;
+      left: -60px;
+      display: flex;
+      width: 1160px;
+      padding: 20px 0 42px 0;
+
+      background-color:  #f7e296;
+      z-index: 1;
+  }
+
+
 
   .goods-navigation-item a:hover,
   .goods-navigation-item a:focus {
@@ -269,8 +309,8 @@
   .goods-navigation-item:first-child::after {
       content: "";
       position: absolute;
-      left: 235px;
-      top: 5px;
+      left: 231px;
+      top: 2px;
 
       display: block;
       width: 16px;
@@ -283,14 +323,32 @@
   .goods-camera,
   .goods-watch,
   .goods-copters {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+
       list-style: none;
   }
 
-  .appearing-menu-item a {
+  .goods-camera {
+      margin-left: 60px;
+      margin-right: 55px;
+  }
+
+  .goods-watch {
+      margin-right: 75px;
+  }
+
+
+
+  .appearing-menu-wrapper a {
       font-family: "Open Sans";
       font-size: 15px;
       font-weight: 300;
-      line-height: 36px;
+      line-height: 30px;
       letter-spacing: 0.15px;
       color: #000000;
   }
