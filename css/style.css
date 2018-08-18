@@ -288,7 +288,7 @@
       padding: 25px 0 38px 0;
 
       background-color:  #f7e296;
-      z-index: 4;
+      z-index: 5;
   }
 
 
@@ -389,10 +389,9 @@
       width: 1160px;
   }
 
-  .slider-second-item,
-  .slider-first-item {
-      opacity: 0;
-  }
+  /*.slider-second-item {*/
+      /*z-index: 3;*/
+  /*}*/
 
   .slider-info {
       width: 560px;
@@ -412,7 +411,6 @@
       font-weight: 400;
       line-height: 56px;
       letter-spacing: 0.55px;
-      z-index: 2;
   }
 
   .slider-item p:first-of-type::before {
@@ -493,6 +491,7 @@
       color: #000000;
   }
 
+
   /*.slider-first-item p:first-of-type {*/
       /*padding-top: 132px;*/
       /*padding-bottom: 20px;*/
@@ -551,6 +550,43 @@
   .slider-item a:active {
       opacity: 0.3;
   }
+
+  .slider-controls {
+      position: absolute;
+      top:100px;
+      right: 150px;
+      z-index: 4;
+  }
+
+  .slider input[type="radio"] {
+      display: none;
+  }
+
+  .slider-controls label{
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: url("../img/slider-button-empty.svg") no-repeat;
+      background-size: 12px;
+  }
+
+  .slider-item {
+      opacity: 1;
+      z-index: 1;
+  }
+
+  #slide1:checked ~ .slider-controls label[for="slide1"],
+  #slide2:checked ~ .slider-controls label[for="slide2"],
+  #slide3:checked ~ .slider-controls label[for="slide3"] {
+      background: url("../img/slider-button копия.png") no-repeat;
+  }
+
+  #slide2:checked ~.slider .slider-second-item {
+      opacity: 2;
+      z-index: 2;
+  }
+
+
 
   .popular-goods {
       display: flex;
