@@ -571,8 +571,8 @@
   }
 
   .slider-item {
-      opacity: 1;
-      z-index: 1;
+      opacity: 0;
+      z-index: 0;
   }
 
   #slide1:checked ~ .slider-controls label[for="slide1"],
@@ -581,9 +581,9 @@
       background: url("../img/slider-button копия.png") no-repeat;
   }
 
-  #slide2:checked ~.slider .slider-second-item {
-      opacity: 2;
-      z-index: 2;
+  #slide1:checked ~.slider .slider-first-item {
+      opacity: 1;
+      z-index: 10;
   }
 
 
