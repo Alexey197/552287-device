@@ -774,11 +774,18 @@
 
   }
 
-  .conditions-list a:hover {
+  .conditions-list a:hover,
+  .conditions-list a:focus {
     background-color: #f0c52e;
     line-height: 40px;
   }
-  
+
+  .conditions-list a:active {
+    color: #f0c52e;
+      background-image: none;
+    background-color: #000000;
+  }
+
 
 
 
