@@ -759,20 +759,40 @@
   }
 
   .conditions-list li {
-    width: 160px;
-    margin-bottom: 50px;
-    text-align: center;
-    line-height: 40px;
+     width: 160px;
+     margin-bottom: 50px;
+     text-align: center;
+     line-height: 40px;
 
 
   }
 
-  .conditions-list a {
+  .conditions-item a {
+      position: relative;
       display: inline-block;
       width: inherit;
       background-image: linear-gradient(to bottom, transparent 7px, #f0c52e 7px,#F0C52F 15px,transparent 15px );
-
   }
+
+  .conditions-item a::after {
+      content: "";
+      position: absolute;
+      width: 135px;
+      height: 40px;
+
+      background-color: #000000;
+      opacity: 0;
+  }
+
+  .conditions-item:nth-child(2) a::after {
+      left: 145px;
+  }
+
+  .conditions-item:nth-child(3) a::after {
+       left: 150px;
+  }
+
+
 
   .conditions-list a:hover,
   .conditions-list a:focus {
@@ -780,11 +800,24 @@
     line-height: 40px;
   }
 
+
+
   .conditions-list a:active {
-    color: #f0c52e;
+      color: #f0c52e;
       background-image: none;
-    background-color: #000000;
+      background-color: #000000;
+      opacity: 1;
   }
+
+  .conditions-list a:active::after {
+      opacity: 1;
+  }
+
+
+
+
+
+
 
 
 
