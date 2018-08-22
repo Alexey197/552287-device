@@ -772,7 +772,7 @@
       position: relative;
       display: inline-block;
       width: inherit;
-      background-image: linear-gradient(to bottom, transparent 7px, #f0c52e 7px,#F0C52F 15px,transparent 15px );
+      background-image: linear-gradient(to bottom, transparent 7px, #f0c52e 7px, #f0c52e 15px,transparent 15px );
   }
 
   .conditions-item a::after {
@@ -812,6 +812,10 @@
 
   .conditions-list a:active::after {
       opacity: 1;
+  }
+
+  .logotypes {
+      margin-bottom: 60px;
   }
 
 
@@ -960,6 +964,11 @@
 
   .info h3,
   .contacts h3 {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 42px;
+
       font-family: "Gilroy - Extra Bold";
       font-size: 47px;
       font-weight: 400;
@@ -970,6 +979,9 @@
 
   .info p,
   .contacts p {
+      margin: 0;
+      padding: 0;
+
       font-family: 'Open Sans';
       font-weight: 300;
       color: #464646;
@@ -982,18 +994,35 @@
       font-weight: 400;
       line-height: 24px;
       text-transform: uppercase;
-      letter-spacing: 2.15px;
+      letter-spacing: 3.55px;
       color: #000000;
   }
 
   .companies {
-      list-style: circle;
       margin: 0;
       padding: 0;
+      padding-left: 35px;
+      padding-bottom: 57px;
+
+      list-style: none;
+  }
+
+  .companies li {
+      position: relative;
+  }
+
+  .companies li::before {
+      content: "";
+      position: absolute;
+      left: -34px;
+      top: 17px;
+      width: 8px;
+      height: 8px;
+      background-image: url("../img/companies-list-item.png");
+
   }
 
   .companies a {
-      padding-left: 10px;
 
       font-family: "Gilroy - Extra Bold";
       font-size: 16px;
@@ -1004,8 +1033,78 @@
 
   .about-us-wrapper {
       display: flex;
-      justify-content: start;
+      padding-top: 77px;
   }
+
+  .info {
+      min-width: 600px;
+  }
+
+  .info h3::before,
+  .contacts h3::before {
+      content: "";
+      position: absolute;
+      top: -54px;
+      width: 80px;
+      height: 7px;
+
+      background-color: #000000;
+  }
+
+  .info p:nth-of-type(1) {
+      padding-right: 130px;
+      padding-bottom: 30px;
+  }
+
+  .info p:nth-of-type(2) {
+      padding-bottom: 65px;
+
+      letter-spacing: -0.15px;
+  }
+
+  .contacts p:nth-of-type(1) {
+      padding-bottom: 40px;
+  }
+
+  .contacts p:nth-child(3) {
+      padding-bottom: 60px;
+  }
+
+
+  .info p:nth-of-type(3),
+  .contacts p:nth-of-type(3){
+      width: 260px;
+      line-height: 40px;
+
+      text-align: center;
+  }
+
+  .about-us-info,
+  .about-us-contacts {
+      display: inline-block;
+
+      width: inherit;
+      background-image: linear-gradient(to bottom, transparent 7px, #f0c52e 7px,#f0c52e 15px,transparent 15px );
+  }
+
+  .about-us-info:hover,
+  .about-us-contacts:hover {
+      line-height: 40px;
+      background-color: #f0c52e;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /*Модальное окно. Личный кабинет*/
 
