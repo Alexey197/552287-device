@@ -745,14 +745,15 @@
 
   .services-container {
       display: flex;
-      padding-bottom: 67px;
+      padding-bottom: 70px;
+      margin-bottom: 94px;
   }
 
   .conditions-list {
       margin: 0;
       padding: 0;
       width: 285px;
-      padding:90px 0 37px 0 ;
+      padding:81px 0 48px 0 ;
 
       list-style: none;
       border-right: 7px solid #000000;
@@ -760,7 +761,7 @@
 
   .conditions-list li {
      width: 160px;
-     margin-bottom: 50px;
+     margin-bottom: 23px;
      text-align: center;
      line-height: 40px;
 
@@ -829,14 +830,26 @@
   }
 
   .services-item {
-      margin-left: 115px;
-      padding-top: 80px;
+      padding-left: 118px;
+      padding-top: 74px;
   }
 
   .services-delivery {
       background-image: url('../img/delivery.svg');
       background-repeat: no-repeat;
-      background-position: 560px  50px;
+      background-position: 558px  84px;
+  }
+
+  .services-item h3 {
+      padding-bottom: 30px;
+  }
+
+  .services-delivery p {
+      padding-right: 320px;
+  }
+
+  .services-delivery {
+      position: relative;
   }
 
 
@@ -845,20 +858,105 @@
 
   .credit,
   .warranty {
-      display: none;
+      position: absolute;
+      /*display: none;*/
+      left:0;
+
   }
+
+  .warranty {
+      left: 379px;
+
+      background-image: url('../img/warranty.svg');
+      background-repeat: no-repeat;
+      background-position: 660px  60px;
+  }
+
+  .warranty p {
+      padding-right: 395px;
+  }
+
+  .credit {
+      left: 376px;
+
+      background-image: url('../img/credit.svg');
+      background-repeat: no-repeat;
+      background-position: 652px  60px;
+  }
+
+
+  .credit p{
+      padding-right: 422px;
+  }
+
+  .credit,
+  .services-delivery,
+  .warranty {
+      opacity: 0;
+  }
+
+  .services-delivery {
+      opacity: 1;
+  }
+
 
 
 
 
   .logotypes-list {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
 
       list-style: none;
       margin: 0;
       padding: 0;
   }
+  
+  .logotypes-list {
+      position: relative;
+  }
+
+  .logotypes-list li:not(:last-child) {
+      margin-right: 40px;
+      z-index: 3;
+  }
+
+  
+  .logotypes-list li::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 100px;
+
+      opacity: 0;
+      cursor: pointer;
+  }
+
+  .logotypes-list li:first-child::before {
+      background: url("../img/logo-color-1.jpg");
+  }
+
+  .logotypes-list li:nth-child(2)::before {
+      background: url("../img/llogo-color-3-1.jpg");
+  }
+
+  .logotypes-list li:nth-child(3)::before {
+      background: url("../img/logo-color-3.jpg");
+  }
+
+  .logotypes-list li:nth-child(4)::before {
+      background: url("../img/logo-color-4.jpg");
+  }
+
+  .logotypes-list li:hover::before {
+      opacity: 1;
+  }
+
+
+
+
+
+
 
   .info h3,
   .contacts h3 {
