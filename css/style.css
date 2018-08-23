@@ -1041,6 +1041,7 @@
   .about-us-wrapper {
       display: flex;
       padding-top: 77px;
+      margin-bottom: 80px;
   }
 
   .info {
@@ -1081,22 +1082,21 @@
   .info p:nth-of-type(3),
   .contacts p:nth-of-type(3){
       width: 260px;
-      line-height: 40px;
 
       text-align: center;
   }
 
   .about-us-info,
   .about-us-contacts {
-      display: inline-block;
-
+      display: block;
+      padding: 8px 0;
       width: inherit;
-      background-image: linear-gradient(to bottom, transparent 7px, #f0c52e 7px,#f0c52e 15px,transparent 15px );
+
+      background-image: linear-gradient(to bottom, transparent 15px, #f0c52e 15px,#f0c52e 23px,transparent 23px );
   }
 
   .about-us-info:hover,
   .about-us-contacts:hover {
-      line-height: 40px;
       background-color: #f0c52e;
   }
 
@@ -1193,24 +1193,20 @@
       opacity: .3;
   }
 
-  .footer-user-menu {
-      list-style: none;
-  }
-
-  .footer-middle-item path {
+  .footer-top-item path {
       fill:  #ffc600;
   }
 
-  .footer-middle-item a:hover path,
-  .footer-middle-item a:focus path{
+  .footer-top-item a:hover path,
+  .footer-top-item a:focus path{
       opacity: 0.6;
   }
 
-  .footer-middle-item a:active path {
+  .footer-top-item a:active path {
       opacity: 0.3;
   }
 
-  .footer-middle-item span {
+  .footer-top-item span {
       font-family: "Open Sans";
       font-size: 15px;
       font-weight: 300;
@@ -1220,25 +1216,25 @@
       opacity: 0.7;
   }
 
-  .footer-middle-item a:hover span,
-  .footer-middle-item a:focus span {
+  .footer-top-item a:hover span,
+  .footer-top-item a:focus span {
       opacity: 1;
   }
 
-  .footer-middle-item a:active span {
+  .footer-top-item a:active span {
       opacity: 0.3;
   }
 
-  .footer-middle-item:nth-of-type(2) svg{
+  .footer-top-item:nth-of-type(2) svg{
       fill: #ffc600;
   }
 
-  .footer-middle-item:nth-of-type(2) a:hover svg,
-  .footer-middle-item:nth-of-type(2) a:focus svg {
+  .footer-top-item:nth-of-type(2) a:hover svg,
+  .footer-top-item:nth-of-type(2) a:focus svg {
       opacity: 0.6;
   }
 
-  .footer-middle-item:nth-of-type(2) a:active svg {
+  .footer-top-item:nth-of-type(2) a:active svg {
       opacity: 0.3;
   }
 
@@ -1247,9 +1243,6 @@
       color: #ffffff;
   }
 
-  .footer-site-menu {
-      list-style: none;
-  }
 
   .footer-site-menu a {
       font-family: "Gilroy - Extra Bold";
@@ -1268,10 +1261,6 @@
 
   .footer-site-menu a:active {
       opacity: 0.3;
-  }
-
-  .social-buttons {
-      list-style: none;
   }
 
   .social-button {
@@ -1298,6 +1287,115 @@
   .html-academy-logo:active path {
       opacity: 0.3;
   }
+
+
+
+
+  .footer-top {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 50px;
+      padding-bottom: 6px;
+  }
+
+  .footer-user-menu {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      padding-top: 13px;
+
+      list-style: none;
+  }
+
+  .footer-top-item:last-child {
+      padding-left: 40px;
+  }
+
+  .footer-top-item:nth-child(2) {
+      padding-left: 45px;
+  }
+
+  .footer-top-item span {
+      padding-left: 5px;
+  }
+
+  .footer-top-item:first-child span{
+      padding-left: 9px;
+  }
+
+  .footer-middle {
+      display: flex;
+      padding-bottom: 60px;
+  }
+
+  .footer-middle p {
+      margin: 0;
+      padding: 0;
+
+      letter-spacing: 0;
+  }
+
+  .footer-site-menu {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      padding-left: 164px;
+      padding-top: 3px;
+
+      list-style: none;
+  }
+
+  .footer-site-menu li:not(:first-child) {
+      padding-left: 33px;
+  }
+
+  .footer-middle .phone-number {
+      padding-left: 202px;
+  }
+
+  .footer-bottom {
+      position: relative;
+      display: flex;
+      padding-bottom: 30px;
+  }
+
+  .footer-bottom::before {
+      content: "";
+      position: absolute;
+      top: 13px;
+      width: 80px;
+      height: 7px;
+
+      background-color: #ffcc00;
+  }
+
+  .social-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      margin-left: 510px;
+
+      list-style: none;
+  }
+
+  .social-buttons li:not(:first-child) {
+      padding-left: 22px;
+  }
+
+  .copyright {
+      margin: 0;
+      padding: 0;
+
+      margin-left: auto;
+
+  }
+
+
+
+
+
+
 
   /*КАТАЛОГ catalog.html*/
 
