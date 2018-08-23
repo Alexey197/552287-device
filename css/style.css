@@ -54,6 +54,7 @@
 
   a {
       text-decoration: none;
+      color: inherit;
   }
 
   .visually-hidden {
@@ -701,23 +702,6 @@
       margin-bottom: 81px;
   }
 
-
-
-
-  .conditions-list a {
-      font-family: "Gilroy - Extra Bold";
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 24px;
-      text-transform: uppercase;
-      letter-spacing: 3.8px;
-      color: #000000;
-  }
-
-  .conditions-list a:active {
-      color: #f7e184;
-  }
-
   .services-item h3 {
       width: 250px;
 
@@ -738,94 +722,79 @@
       color: #464646;
   }
 
-
   .services {
       background: linear-gradient(white 100px,#e5e5e5 100px );
   }
 
   .services-container {
+      position: relative;
       display: flex;
       padding-bottom: 70px;
       margin-bottom: 94px;
   }
 
-  .conditions-list {
-      margin: 0;
-      padding: 0;
-      width: 285px;
-      padding:81px 0 48px 0 ;
-
-      list-style: none;
-      border-right: 7px solid #000000;
-  }
-
-  .conditions-list li {
-     width: 160px;
-     margin-bottom: 23px;
-     text-align: center;
-     line-height: 40px;
-
-
-  }
-
-  .conditions-item a {
-      position: relative;
-      display: inline-block;
-      width: inherit;
-      background-image: linear-gradient(to bottom, transparent 7px, #f0c52e 7px, #f0c52e 15px,transparent 15px );
-  }
-
-  .conditions-item a::after {
+  .services-container::before {
       content: "";
       position: absolute;
-      width: 135px;
-      height: 40px;
+      width: 7px;
+      height: 319px;
+      top: 0;
+      left: 297px;
 
       background-color: #000000;
-      opacity: 0;
   }
 
-  .conditions-item:nth-child(2) a::after {
+  .services-container > input {
+      display: none;
+  }
+
+  .services-controls {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 81px;
+      left: 24px;
+      width: 155px;
+  }
+
+  .services-controls label {
+      position: relative;
+      display: inline-block;
+      padding: 8px 0;
+      margin-bottom: 25px;
+      font-family: "Gilroy - Extra Bold";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 3.8px;
+      color: #000000;
+      cursor: pointer;
+      background-image: linear-gradient(to bottom, transparent 15px, #f0c52e 15px, #f0c52e 23px,transparent 23px );
+      text-align: center;
+  }
+
+  .services-container label::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 135px;
+      height: 40px;
+      visibility: hidden;
+
+      background-color: #000000;
+  }
+
+  .services-container label:nth-child(2)::after,
+  .services-container label:nth-child(3)::after {
       left: 145px;
   }
 
-  .conditions-item:nth-child(3) a::after {
-       left: 150px;
+
+  .services-container label:hover,
+  .services-container label:focus {
+      background-color: #f0c52e;
   }
-
-
-
-  .conditions-list a:hover,
-  .conditions-list a:focus {
-    background-color: #f0c52e;
-    line-height: 40px;
-  }
-
-
-
-  .conditions-list a:active {
-      color: #f0c52e;
-      background-image: none;
-      background-color: #000000;
-      opacity: 1;
-  }
-
-  .conditions-list a:active::after {
-      opacity: 1;
-  }
-
-  .logotypes {
-      margin-bottom: 60px;
-  }
-
-
-
-
-
-
-
-
-
 
   .services-item h3,
   .services-item p {
@@ -834,14 +803,16 @@
   }
 
   .services-item {
+      margin-left: 284px;
       padding-left: 118px;
       padding-top: 74px;
+      padding-bottom: 77px;
   }
 
   .services-delivery {
       background-image: url('../img/delivery.svg');
       background-repeat: no-repeat;
-      background-position: 558px  84px;
+      background-position: 675px  84px;
   }
 
   .services-item h3 {
@@ -863,13 +834,14 @@
   .credit,
   .warranty {
       position: absolute;
-      /*display: none;*/
+      margin: 0;
       left:0;
 
   }
 
   .warranty {
-      left: 379px;
+      position: absolute;
+      left: 302px;
 
       background-image: url('../img/warranty.svg');
       background-repeat: no-repeat;
@@ -877,11 +849,12 @@
   }
 
   .warranty p {
-      padding-right: 395px;
+      padding-right: 320px;
   }
 
   .credit {
-      left: 376px;
+      position: absolute;
+      left: 304px;
 
       background-image: url('../img/credit.svg');
       background-repeat: no-repeat;
@@ -890,7 +863,7 @@
 
 
   .credit p{
-      padding-right: 422px;
+      padding-right: 350px;
   }
 
   .credit,
@@ -899,13 +872,44 @@
       opacity: 0;
   }
 
-  .services-delivery {
+  #services-slide1:checked ~ .services-delivery {
       opacity: 1;
   }
 
+  #services-slide1:checked ~ .services-controls  label:first-child::after {
+      visibility: visible;
+  }
 
+  #services-slide1:checked ~ .services-controls label:first-child {
+      background: #000000 none;
+      color: #f0c52e;
+  }
 
+  #services-slide2:checked ~ .warranty {
+      opacity: 1;
+  }
 
+  #services-slide2:checked ~ .services-controls  label:nth-child(2)::after {
+      visibility: visible;
+  }
+
+  #services-slide2:checked ~ .services-controls label:nth-child(2) {
+      background: #000000 none;
+      color: #f0c52e;
+  }
+
+  #services-slide3:checked ~ .credit {
+      opacity: 1;
+  }
+
+  #services-slide3:checked ~ .services-controls  label:nth-child(3)::after {
+      visibility: visible;
+  }
+
+  #services-slide3:checked ~ .services-controls label:nth-child(3) {
+      background: #000000 none;
+      color: #f0c52e;
+  }
 
   .logotypes-list {
       display: flex;
@@ -926,34 +930,37 @@
   }
 
   
-  .logotypes-list li::before {
+  .logotypes-list a::before {
       content: "";
       position: absolute;
       width: 260px;
       height: 100px;
 
       opacity: 0;
-      cursor: pointer;
   }
 
-  .logotypes-list li:first-child::before {
+  .logotypes-list li:first-child a::before {
       background: url("../img/logo-color-1.jpg");
   }
 
-  .logotypes-list li:nth-child(2)::before {
+  .logotypes-list li:nth-child(2) a::before {
       background: url("../img/llogo-color-3-1.jpg");
   }
 
-  .logotypes-list li:nth-child(3)::before {
+  .logotypes-list li:nth-child(3) a::before {
       background: url("../img/logo-color-3.jpg");
   }
 
-  .logotypes-list li:nth-child(4)::before {
+  .logotypes-list li:nth-child(4) a::before {
       background: url("../img/logo-color-4.jpg");
   }
 
-  .logotypes-list li:hover::before {
+  .logotypes-list li a:hover::before {
       opacity: 1;
+  }
+
+  .logotypes {
+      margin-bottom: 60px;
   }
 
 
