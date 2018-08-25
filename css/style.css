@@ -1401,39 +1401,60 @@
 
   .catalog-page-header {
       margin-bottom: 40px;
+      padding-bottom: 49px;
+
   }
 
   .catalog-good-current {
       margin: 0;
       padding: 0;
       margin-left: 60px;
-      margin-bottom: 35px;
+      margin-bottom: 18px;
 
       font-family: "Gilroy - Extra Bold";
       font-size: 47px;
       font-weight: 400;
       line-height: 48px;
-      letter-spacing: 0.17px;
+      letter-spacing: 0.6px;
       color: #000000;
   }
 
   .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
       margin: 0;
       padding: 0;
       margin-left: 60px;
-      margin-bottom: 50px;
+      padding-bottom: 45px;
 
       list-style: none;
   }
+
+  .breadcrumbs li {
+      padding-right: 20px;
+  }
+
   .breadcrumbs a {
+      padding-right: 10px;
+
       font-family: "Open Sans";
       font-size: 14px;
       font-weight: 300;
       line-height: 24px;
-      letter-spacing: 0.14px;
+      letter-spacing: 0.001px;
       color: #000000;
       opacity: 0.3;
   }
+
+  .breadcrumbs li:nth-child(2) {
+      padding-right: 18px;
+  }
+
+  .breadcrumbs li:nth-child(2) a {
+      padding-right: 14px;
+  }
+
+
 
   .catalog-columns {
       display: flex;
@@ -1445,7 +1466,10 @@
   }
 
   .filters-title-wrapper {
+      display: flex;
+      align-items: center;
       width: 328px;
+      height: 70px;
       margin: 0;
       padding: 0;
 
@@ -1454,7 +1478,7 @@
       font-weight: 400;
       line-height: 24px;
       text-transform: uppercase;
-      letter-spacing: 0.91px;
+      letter-spacing: 3.6px;
       color: #000000;
 
       background-color:  #dbdbdb;
@@ -1485,17 +1509,16 @@
 
   .catalog-wrapper {
       display: flex;
-      /*justify-content: flex-start;*/
-      /*flex-wrap: wrap;*/
       flex-direction: column;
+      padding-bottom: 76px;
   }
 
   .sorting-list-wrapper {
       display: flex;
-      justify-content: space-between;
-      margin: 0;
-      padding: 0;
+      align-items: center;
+      height: 70px;
 
+      background-color: #ebebeb;
   }
 
   .sorting-item-title {
@@ -1506,7 +1529,7 @@
       font-weight: 400;
       line-height: 24px;
       text-transform: uppercase;
-      letter-spacing: 0.91px;
+      letter-spacing: 3.6px;
       color: #000000;
   }
 
@@ -1531,33 +1554,59 @@
 
   .sorting-up-down,
   .sorting-list {
+      display: flex;
       margin: 0;
       padding: 0;
+      padding-bottom: 5px;
 
       list-style: none;
   }
 
+  .sorting-list {
+      padding-left: 51px;
+  }
 
+  .sorting-item:nth-child(2) {
+      padding-left: 27px;
+  }
 
+  .sorting-item:nth-child(3) {
+      padding-left: 29px;
+  }
+
+  .sorting-item-down {
+      padding-left: 19px;
+  }
+
+  .sorting-up-down {
+      margin-left: auto;
+  }
 
   .catalog-list {
       display: flex;
-      justify-content: flex-start;
       flex-wrap: wrap;
       margin: 0;
       padding: 0;
       margin-left: 72px;
+      padding-top: 21px;
+      padding-bottom: 36px;
 
       list-style: none;
   }
 
-  .catalog-item:nth-of-type(even) {
-      margin-left: 40px;
-  }
-
-  .catalog-list h3 {
+  .catalog-list h3,
+  .catalog-list p {
       margin: 0;
       padding: 0;
+  }
+
+  .catalog-item {
+      margin-top: 47px;
+  }
+
+
+  .catalog-item:nth-of-type(even) {
+      margin-left: 40px;
   }
 
   .goods-title span:nth-of-type(1) {
@@ -1578,13 +1627,26 @@
       color: #464646;
   }
 
-  .label-new {
+  .goods-title {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 23px;
+  }
+
+  .catalog-item {
+      position: relative;
+  }
+
+  .label-new::before {
+      content: "new";
+      position: absolute;
       width: 60px;
       height: 61px;
+      top: 27px;
+      right: 27px;
 
       border: 2px solid #000000;
       border-radius: 50%;
-      opacity: 0.1;
 
       font-family: "Gilroy - Extra Bold";
       font-size: 14px;
@@ -1595,19 +1657,34 @@
       color: #000000;
       opacity: 0.2;
       text-align: center;
+      z-index: 3;
+  }
+
+  .catalog-item-basket {
+      width: 200px;
+      text-align: center;
   }
 
   .catalog-item-basket a {
+      display: block;
+      padding: 8px 0;
+
       font-family: "Gilroy - Extra Bold";
       font-size: 18px;
       font-weight: 400;
       line-height: 24px;
       text-transform: uppercase;
-      letter-spacing: 2.15px;
+      letter-spacing: 3.6px;
       color: #000000;
+      background-image: linear-gradient(to bottom, transparent 15px, #f0c52e 15px,#f0c52e 23px,transparent 23px );
   }
 
-  .catalog-item-basket a:active {
+  .catalog-item-basket a:hover,
+  .catalog-item-basket a:focus {
+      background: #f0c52e none;
+  }
+
+  .catalog-item-basket a:active span{
       opacity: 0.3;
   }
 
@@ -1630,13 +1707,36 @@
       opacity: 0.2;
   }
 
-  .pagination-list {
-      margin: 0;
-      padding: 0;
-      margin-left: 72px;
-
-      list-style: none;
+  .catalog-item-image {
+      position: relative;
   }
+
+  .catalog-item-basket,
+  .catalog-item-compare {
+      position: absolute;
+      opacity: 0;
+  }
+
+  .catalog-item-basket {
+      top: 174px;
+      left: 82px;
+  }
+
+  .catalog-item-compare {
+      top: 219px;
+      left: 110px;
+  }
+
+  .catalog-item-image:hover .catalog-item-pic{
+      opacity: 0.7;
+  }
+
+  .catalog-item-image:hover .catalog-item-basket,
+  .catalog-item-image:hover .catalog-item-compare {
+      opacity: 1;
+  }
+
+
 
   .pagination-item a {
       font-family: "Gilroy - Extra Bold";
@@ -1644,7 +1744,7 @@
       font-weight: 400;
       line-height: 24px;
       text-transform: uppercase;
-      letter-spacing: 0.91px;
+      letter-spacing: 3.6px;
       color: #000000;
   }
 
@@ -1654,6 +1754,48 @@
   }
 
   .pagination-item-backward:active,
-  .pagination-item-forward :active {
+  .pagination-item-forward:active {
       opacity: 0.3;
   }
+
+  .pagination-list {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      margin-left: 72px;
+      height: 70px;
+
+      list-style: none;
+      background-color: #ebebeb;
+  }
+
+  .pagination-item-backward {
+      margin-right: auto;
+  }
+
+  .pagination-item-backward a {
+      padding: 26px 30px 25px 30px;
+  }
+
+  .pagination-item-forward {
+      margin-left: auto;
+  }
+
+  .pagination-item-forward a {
+      padding: 26px 27px 25px 30px;
+  }
+
+  .pagination-item-backward a:hover,
+  .pagination-item-forward a:hover {
+      background-color: #d9d9d9;
+  }
+
+  .pagination-item:nth-child(2) {
+      padding-left: 5px;
+  }
+
+  .pagination-item:nth-child(n+3):not(:last-child) a{
+      padding-left: 30px;
+  }
+
