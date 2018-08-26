@@ -1458,7 +1458,7 @@
 
   .catalog-columns {
       display: flex;
-      justify-content: space-between;
+      /*justify-content: space-between;*/
   }
 
   .filters {
@@ -1502,10 +1502,53 @@
       list-style: none;
   }
 
-  .filter fieldset{
+  .filter fieldset {
       margin: 0;
       padding: 0;
   }
+
+  .filters-wrapper {
+      padding-right: 67px;
+  }
+
+  .price-controls input[type="text"] {
+      width: 50px;
+      background-color:  #efefef;
+      border: none;
+  }
+
+  .price-controls label {
+      /*display: inline-block;*/
+  }
+
+  .range-controls {
+      position: relative;
+
+  }
+
+  .range-controls .scale {
+      height: 2px;
+      background-color: #dbdbdb;
+  }
+
+  .range-controls .bar {
+      width: 60%;
+      height: 2px;
+      background-color: #91c92f;
+  }
+
+  .range-toggle {
+      width: 10px;
+      heigth: 10px;
+      background-color: red;
+      border: 5px solid green;
+      box-sizing: content-box;
+  }
+
+
+
+
+
 
   .catalog-wrapper {
       display: flex;
