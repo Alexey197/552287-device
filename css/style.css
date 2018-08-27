@@ -1484,6 +1484,17 @@
       background-color:  #dbdbdb;
   }
 
+  .filter legend {
+      color: #000000;
+      font-family: "Gilroy - Extra Bold";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.18px;
+  }
+
+
+
   .filters-title,
   .filters-wrapper {
       margin: 0;
@@ -1509,6 +1520,16 @@
 
   .filters-wrapper {
       padding-right: 67px;
+      padding-top: 68px;
+  }
+
+  .filter {
+      border-top: 2px solid #000000;
+  }
+
+  .filter-range legend {
+      padding-top: 11px;
+      padding-bottom: 35px;
   }
 
   .price-controls input[type="text"] {
@@ -1518,12 +1539,24 @@
   }
 
   .price-controls label {
-      /*display: inline-block;*/
+      margin: 0;
+      padding: 0;
+
+      color: #000000;
+      opacity: 0.2;
+      font-family: Gilroy;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+  }
+
+  .price-controls .max-price {
+      padding-left: 17px;
   }
 
   .range-controls {
       position: relative;
-
+      padding-bottom: 5px;
   }
 
   .range-controls .scale {
@@ -1538,12 +1571,81 @@
   }
 
   .range-toggle {
-      width: 10px;
-      heigth: 10px;
-      background-color: red;
-      border: 5px solid green;
+      position: absolute;
+      top: -9px;
+      width: 4px;
+      height: 4px;
+
+      background: #b4b4b4;
+      border: 8px solid #ffffff;
       box-sizing: content-box;
+      border-radius: 50%;
+      box-shadow: 0 2px 1px #dbdbdb;
+      cursor: pointer;
   }
+
+  .range-toggle-min {
+      left: -5px;
+  }
+
+  .range-toggle-max {
+      left: 54%;
+  }
+
+  .range-toggle:hover,
+  .range-toggle:focus {
+      transform: scale(1.1);
+  }
+
+  .filters .filter-range {
+      padding-bottom: 32px;
+
+      border-bottom: 2px solid #000000;
+  }
+
+  .filter-checkbox legend {
+      padding-top: 11px;
+      padding-bottom: 17px;
+  }
+
+
+
+  input[type="checkbox"],
+  input[type="radio"] {
+      display: none;
+  }
+
+  input[type="checkbox"] + label {
+      position: relative;
+      padding-left: 39px;
+
+      color: #000000;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 40px;
+      letter-spacing: 0.14px;
+  }
+
+  input[type="checkbox"] + label::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: -3px;
+
+      width: 23px;
+      height: 23px;
+      background-image: url("../img/checkbox-off.svg");
+
+  }
+
+  input[type="checkbox"]:checked + label::before {
+      background-image: url("../img/checkbox-on.svg");
+  }
+
+
+
+
 
 
 
