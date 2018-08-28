@@ -244,9 +244,11 @@
       </div>
     </div>
   </section>
+  <div class="container">
   <section class="modal modal-login">
     <h2 class="visually-hidden">Личный кабинет</h2>
     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal-login-wrapper">
       <p class="appointment-item">
         <label for="appointment-name">Ваше имя:</label>
         <input type="text" name="name" id="appointment-name" placeholder="Имя Фамилия">
@@ -257,9 +259,10 @@
       </p>
       <p class="appointment-item">
         <label for="appointment-letter">Текст письма:</label>
-        <textarea name="latter" id="appointment-letter" placeholder="В свободной форме"></textarea>
+        <textarea name="latter" id="appointment-letter" placeholder="В свободной форме" rows="7"></textarea>
       </p>
-      <button class="button" type="submit">отправить</button>
+        <button class="button" type="submit"><span>отправить</span></button>
+      </div>
     </form>
     <button class="modal-close" type="button">
       <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
@@ -278,6 +281,7 @@
       </svg>
     </button>
   </section>
+  </div>
   <footer class="main-footer">
     <div class="container">
       <div class="footer-top">

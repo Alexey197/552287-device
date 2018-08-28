@@ -1140,7 +1140,7 @@
       font-weight: 400;
       line-height: 24px;
       text-transform: uppercase;
-      letter-spacing: 2.15px;
+      letter-spacing: 3.6px;
       color: #000000;
 
       border: none;
@@ -1171,9 +1171,97 @@
   .modal-close:active {
       opacity: 0.3;
   }
-  .modal {
-      display: none;
+
+  .modal p {
+      margin: 0;
+      padding: 0;
   }
+
+  .modal-login p {
+      display: flex;
+      flex-direction: column;
+  }
+
+
+  .modal-login {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 960px;
+
+      background-color: #ffffff;
+      box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+      z-index: 10;
+  }
+
+  .modal-login-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 95px 100px 77px 100px;
+  }
+
+  .modal-login input[type="text"],
+  .modal-login input[type="email"],
+  .modal-login textarea {
+      background-color: #f2f2f2;
+      border: none;
+
+  }
+
+
+  .modal-login input[type="text"],
+  .modal-login input[type="email"] {
+      width: 360px;
+      padding: 16px 20px;
+      margin-top: 7px;
+  }
+
+  .modal-login textarea {
+      width: 760px;
+      padding: 16px 20px;
+  }
+
+  .appointment-item:last-of-type {
+      margin-top: 34px;
+  }
+
+  .appointment-item:last-of-type label {
+      padding-bottom: 7px;
+  }
+
+
+
+
+  .modal-login .modal-close {
+      position: absolute;
+      top: 23px;
+      right: 15px;
+  }
+
+  .modal-login .button {
+      margin-top: 39px;
+      width: 200px;
+      text-align: center;
+      padding: 8px 0;
+      background-image: linear-gradient(to bottom, transparent 15px, #f0c52e 15px,#f0c52e 23px,transparent 23px );
+  }
+
+  .modal-login .button:hover,
+  .modal-login .button:focus {
+      background-color: #f0c52e;
+  }
+
+  .modal-login .button:active span{
+      opacity: 0.3;
+  }
+
+  .modal-map {
+      position: fixed;
+  }
+
+
 
   .main-footer {
       background-color: #464646;
