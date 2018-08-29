@@ -1,32 +1,49 @@
   @font-face{
-
-      font-family: 'Gilroy - Extra Bold';
-
-      src: url('../fonts/gilroyextrabold-webfont.woff2') format("woff2");
-
-      font-weight: bold;
-
+      font-family: "Gilroy";
+      font-weight: 300;
       font-style: normal;
 
+      src: local("Gilroy-Light"), local("Gilroy Light"),
+      url("../fonts/gilroylight.woff2") format("woff2"),
+      url("../fonts/gilroylight.woff") format("woff");
   }
 
   @font-face{
-
-      font-family: 'Gilroy';
-
-      src: url('../fonts/gilroylight-webfont.woff2') format("woff2");
-
-      font-weight: normal;
-
+      font-family: "Gilroy";
+      font-weight: 800;
       font-style: normal;
 
+      src: local("Gilroy-ExtraBold"), local("Gilroy Extra Bold"),
+      url("../fonts/gilroyextrabold.woff2") format("woff2"),
+      url("../fonts/gilroyextrabold.woff") format("woff");
   }
+
+  @font-face {
+      font-family: "Open Sans";
+      font-weight: 300;
+      font-style: normal;
+
+      src: local("Open Sans Light"),
+      url("../fonts/opensanslight.woff2") format("woff2"),
+      url("../fonts/opensanslight.woff") format("woff");
+  }
+
+  @font-face {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-style: normal;
+
+      src: local("Open Sans"),
+      url("../fonts/opensans.woff2") format("woff2"),
+      url("../fonts/opensans.woff") format("woff")
+  }
+
 
   body {
       margin: 0;
       padding: 0;
 
-      font-family: 'Open Sans', 'Gilroy', sans-serif;
+      font-family: "Open Sans", "Gilroy", sans-serif;
       font-size: 15px;
       line-height: 30px;
       font-weight: 300;
@@ -398,7 +415,7 @@
   .slider-item p {
       margin: 0;
       padding: 0;
-      z-index: 2;
+      /*z-index: 2;*/
   }
 
   .slider-item p:first-of-type {
@@ -447,7 +464,7 @@
   }
 
   .slider-third-item p {
-      z-index: 2;
+      z-index: 1;
   }
 
   .slider-third-item p:first-of-type::after {
@@ -470,7 +487,27 @@
 
   .slider-item p:nth-of-type(3) {
       padding-bottom: 53px;
+      width: 220px;
+      text-align: center;
   }
+
+  .slider-link {
+      display: block;
+      padding: 8px 0;
+      background-image: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px );
+  }
+
+  .slider-link:hover,
+  .slider-link:focus {
+      background: #f0c52e;
+  }
+
+
+
+
+
+
+
 
   .slider-feature th {
       margin: 0;
@@ -549,17 +586,6 @@
 
   .slider-third-item th {
       padding-right: 57px;
-  }
-
-
-  .slider-item a:hover,
-  .slider-item a:focus {
-      opacity: 0.6;
-
-  }
-
-  .slider-item a:active {
-      opacity: 0.3;
   }
 
   .slider-controls {
@@ -840,7 +866,6 @@
   }
 
   .warranty {
-      position: absolute;
       left: 302px;
 
       background-image: url('../img/warranty.svg');
@@ -853,7 +878,6 @@
   }
 
   .credit {
-      position: absolute;
       left: 304px;
 
       background-image: url('../img/credit.svg');
@@ -1115,7 +1139,7 @@
 
   /*Модальное окно. Личный кабинет*/
 
-  .appointment-form input[type="text"],
+  .appointment-form input[type="text"] ,
   .appointment-form input[type="email"],
   .appointment-form textarea {
       font-family: "Open Sans";
@@ -1144,16 +1168,6 @@
       color: #000000;
 
       border: none;
-  }
-
-  .appointment-form button[type="submit"]:hover,
-  .appointment-form button[type="submit"]:focus {
-      opacity: 1;
-      cursor: pointer;
-  }
-
-  .appointment-form button[type="submit"]:active {
-      opacity: 0.3;
   }
 
   .modal-close {
@@ -1185,6 +1199,7 @@
 
   .modal-login {
       position: fixed;
+      display: none;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -1205,9 +1220,8 @@
   .modal-login input[type="text"],
   .modal-login input[type="email"],
   .modal-login textarea {
-      background-color: #f2f2f2;
+      background-color: #f3f3f3;
       border: none;
-
   }
 
 
@@ -1216,6 +1230,23 @@
       width: 360px;
       padding: 16px 20px;
       margin-top: 7px;
+  }
+
+  .modal-login input[type="text"]:hover,
+  .modal-login input[type="email"]:hover,
+  .modal-login textarea:hover {
+      background-color: #eaeaea;
+  }
+
+  .modal-login input[type="text"]:focus,
+  .modal-login input[type="email"]:focus,
+  .modal-login textarea:focus {
+      outline: 3px solid #f0c52e;
+  }
+
+  .modal-login input[type="text"]:invalid,
+  .modal-login input[type="email"]:invalid {
+      background-color: #f6dada;
   }
 
   .modal-login textarea {
@@ -1253,8 +1284,8 @@
       background-color: #f0c52e;
   }
 
-  .modal-login .button:active span{
-      opacity: 0.3;
+  .appointment-form button[type="submit"]:active {
+      color: rgba(0, 0, 0, 0.3);
   }
 
   .modal-map {
