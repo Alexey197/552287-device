@@ -117,12 +117,6 @@
       opacity: 0.3;
   }
 
-  .site-navigation {
-      display: flex;
-      min-width: 500px;
-      justify-content: flex-end;
-      padding: 43px 60px 40px 0;
-  }
 
   input[type="search"] {
       font-family: "Open Sans";
@@ -156,7 +150,7 @@
 
   .form-search-btn {
       padding: 9px 19px;
-      
+
       font-family: "Open Sans";
       font-size: 15px;
       font-weight: 300;
@@ -218,28 +212,17 @@
       color: #000000;
   }
 
-  .site-navigation-item:nth-of-type(1),
-  .site-navigation-item:nth-of-type(2),
-  .site-navigation-item:nth-of-type(3)  {
+  .navigation-item-user,
+  .navigation-item-compare,
+  .navigation-item-cart  {
       position: relative;
   }
 
-  .site-navigation-item:nth-of-type(3) {
-      margin-left: 63px;
-  }
-
-  .site-navigation-item:nth-of-type(2) {
-      margin-left: 237px;
-
-  }
-
-
-
-  .site-navigation-item:nth-of-type(1)::before {
+  .navigation-item-user::before {
       content: "";
       position: absolute;
       left: -27px;
-      top: 9px;
+      top: 4px;
 
       display: block;
       width: 13px;
@@ -249,11 +232,11 @@
       background-repeat: no-repeat;
   }
 
-  .site-navigation-item:nth-of-type(2)::before {
+  .navigation-item-compare::before {
       content: "";
       position: absolute;
-      left: -20px;
-      top: 11px;
+      left: -19px;
+      top: 6px;
 
       display: block;
       width: 10px;
@@ -263,11 +246,11 @@
       background-repeat: no-repeat;
   }
 
-  .site-navigation-item:nth-of-type(3)::before {
+  .navigation-item-cart::before {
       content: "";
       position: absolute;
-      left: -23px;
-      top: 9px;
+      left: -22px;
+      top: 4px;
 
       display: block;
       width: 12px;
@@ -277,6 +260,37 @@
       background-repeat: no-repeat;
   }
 
+  .site-navigation {
+      display: flex;
+      padding: 43px 60px 40px 0;
+  }
+
+
+  .site-navigation-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+  }
+
+  .user-navigation-list {
+      margin-left: 628px;
+  }
+
+  .navigation-item-exit {
+      margin-left: 19px;
+  }
+
+  .store-navigation-list {
+      margin-left: auto;
+  }
+
+  .navigation-item-cart {
+      margin-left: 63px;
+  }
+
 
 
   .site-navigation-item:hover,
@@ -284,13 +298,16 @@
       opacity: 0.6;
   }
 
-  .site-navigation-item:active {
+  .site-navigation-item:active,
+  .navigation-item-exit {
       opacity: 0.3;
   }
 
   .main-navigation {
       margin: 0 60px;
   }
+
+
 
   .goods-navigation {
       display: flex;

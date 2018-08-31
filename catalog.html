@@ -13,17 +13,19 @@
     <div class="main-navigation-wrapper">
       <a href="index.html" class="logo"><img class="logo-img" src="img/logo.png" alt="Логотип Device" width="163"
                                              height="36"></a>
+      <form class="header-form" action="#" method="get">
+          <input type="search" name="search" class="header-form-search" placeholder="Поиск по сайту">
+          <button class="form-search-btn" type="submit">Найти</button>
+        </form>
       <div class="site-navigation">
-        <div class="form-search">
-          <form action="#" method="get">
-            <input type="search" name="search" class="search" placeholder="Поиск по сайту">
-            <input type="submit" value="Найти">
-          </form>
-        </div>
-        <a class="site-navigation-user" href="#">Валентин Петухов</a>
-        <a class="site-navigation-item" href="#">Выйти</a>
-        <a class="site-navigation-item" href="#">Сравнить</a>
-        <a class="site-navigation-item" href="#">Корзина</a>
+        <ul class="site-navigation-list user-navigation-list">
+          <li><a class="site-navigation-item navigation-item-user" href="#">Валентин Петухов</a></li>
+          <li><a class="navigation-item-exit" href="#">Выйти</a></li>
+        </ul>
+        <ul class="site-navigation-list store-navigation-list">
+          <li><a class="site-navigation-item navigation-item-compare" href="#">Сравнить</a></li>
+          <li><a class="site-navigation-item navigation-item-cart" href="#">Корзина</a></li>
+        </ul>
       </div>
       <nav class="main-navigation">
         <ul class="goods-navigation">
