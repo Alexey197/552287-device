@@ -1674,8 +1674,22 @@
   }
 
   .filters {
+      position: relative;
       background-color: #efefef;
   }
+
+  .filters::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 328px;
+      width: calc((100vw - 328px) / 2);
+      height: 100%;
+      background-image: linear-gradient(#dbdbdb 70px, #efefef 70px);
+  }
+
+
+
 
   .filters-title-wrapper {
       display: flex;
@@ -1695,34 +1709,6 @@
 
       background-color:  #dbdbdb;
   }
-
-  .catalog-columns  {
-      position: relative;
-  }
-
-  .catalog-columns::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: -1180px;
-      min-height: 100%;
-      width: 100%;
-
-      background-image: linear-gradient(#dbdbdb 70px, #efefef 70px);
-  }
-
-  .catalog-columns::after {
-      position: absolute;
-      content: "";
-      top: 0;
-      right: -1180px;
-      min-height: 100%;
-      width: 100%;
-
-      background-image: linear-gradient(#ebebeb 70px, #ffffff 70px);
-  }
-
-
 
   .filter legend {
       color: #000000;
@@ -1967,18 +1953,38 @@
 
 
   .catalog-wrapper {
+      position: relative;
       display: flex;
       flex-direction: column;
       padding-bottom: 76px;
   }
 
+  .catalog-wrapper::before {
+      content: "";
+      position: absolute;
+
+
+  }
+
   .sorting-list-wrapper {
       display: flex;
+      position: relative;
       align-items: center;
       height: 70px;
 
       background-color: #ebebeb;
   }
+
+  .sorting-list-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 832px;
+      width: calc((100vw - 1176px) / 2);
+      height: 100%;
+      background-color: #ebebeb;
+  }
+
 
   .sorting-item-title {
       margin-left: 72px;
