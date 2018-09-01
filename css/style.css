@@ -1612,9 +1612,9 @@
       margin-left: 60px;
       margin-bottom: 18px;
 
-      font-family: "Gilroy - Extra Bold";
+      font-family: "Gilroy";
       font-size: 47px;
-      font-weight: 400;
+      font-weight: 800;
       line-height: 48px;
       letter-spacing: 0.6px;
       color: #000000;
@@ -1681,13 +1681,13 @@
       display: flex;
       align-items: center;
       width: 328px;
-      height: 70px;
+      min-height: 70px;
       margin: 0;
       padding: 0;
 
-      font-family: "Gilroy - Extra Bold";
+      font-family: "Gilroy";
       font-size: 16px;
-      font-weight: 400;
+      font-weight: 800;
       line-height: 24px;
       text-transform: uppercase;
       letter-spacing: 3.6px;
@@ -1696,11 +1696,39 @@
       background-color:  #dbdbdb;
   }
 
+  .catalog-columns  {
+      position: relative;
+  }
+
+  .catalog-columns::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -1180px;
+      min-height: 100%;
+      width: 100%;
+
+      background-image: linear-gradient(#dbdbdb 70px, #efefef 70px);
+  }
+
+  .catalog-columns::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: -1180px;
+      min-height: 100%;
+      width: 100%;
+
+      background-image: linear-gradient(#ebebeb 70px, #ffffff 70px);
+  }
+
+
+
   .filter legend {
       color: #000000;
-      font-family: "Gilroy - Extra Bold";
+      font-family: "Gilroy";
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 800;
       line-height: 24px;
       letter-spacing: 0.18px;
   }
@@ -1909,9 +1937,9 @@
 
       text-align: center;
       color: #000000;
-      font-family: "Gilroy - Extra Bold";
+      font-family: "Gilroy";
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 3.6px;
 
@@ -1955,9 +1983,9 @@
   .sorting-item-title {
       margin-left: 72px;
 
-      font-family: "Gilroy - Extra Bold";
+      font-family: "Gilroy";
       font-size: 16px;
-      font-weight: 400;
+      font-weight: 800;
       line-height: 24px;
       text-transform: uppercase;
       letter-spacing: 3.6px;
@@ -2062,9 +2090,9 @@
   }
 
   .goods-title span:nth-of-type(1) {
-      font-family: "Gilroy - Extra Bold";
+      font-family: "Gilroy";
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 800;
       line-height: 24px;
       letter-spacing: 0.18px;
       color: #000000;
@@ -2121,9 +2149,9 @@
       display: block;
       padding: 8px 0;
 
-      font-family: "Gilroy - Extra Bold";
+      font-family: "Gilroy";
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 800;
       line-height: 24px;
       text-transform: uppercase;
       letter-spacing: 3.6px;
@@ -2191,9 +2219,9 @@
 
 
   .pagination-item a {
-      font-family: "Gilroy - Extra Bold";
+      font-family: "Gilroy";
       font-size: 16px;
-      font-weight: 400;
+      font-weight: 800;
       line-height: 24px;
       text-transform: uppercase;
       letter-spacing: 3.6px;
