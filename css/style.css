@@ -38,6 +38,18 @@
       url("../fonts/opensans.woff") format("woff")
   }
 
+  @keyframes bounce {
+      0%    {transform: translate(-50%, -2000px) ;              }
+      70%  {transform: translate(-50%, calc(-50% + 30px)); }
+      90%  {transform: translate(-50%,calc(-50% - 10px));   }
+      100% {transform: translate(-50%, -50%);          }
+  }
+
+  @keyframes shake {
+      0%, 100% {transform: translate(-50%, -50%);}
+      10%, 30%, 50%, 70%, 90% {transform: translate(calc(-50% - 10px), -50%);}
+      20%, 40%, 60%, 80% {transform: translate(calc(-50% + 10px), -50%);}
+  }
 
   body {
       margin: 0;
@@ -101,7 +113,7 @@
 
   .logo {
       position: absolute;
-      top: -20px;
+      top: -17px;
       left: 60px;
       display: block;
 
@@ -187,10 +199,10 @@
       color: #000000;
   }
 
-  .header-form-search:focus + .form-search-btn {
+  .header-form-search:focus + .form-search-btn,
+  .header-form-search + .form-search-btn:active {
       opacity: 1;
   }
-
 
   .form-search-btn:hover,
   .form-search-btn:focus {
@@ -265,7 +277,6 @@
       padding: 43px 60px 40px 0;
   }
 
-
   .site-navigation-list {
       display: flex;
       flex-wrap: wrap;
@@ -291,8 +302,6 @@
       margin-left: 63px;
   }
 
-
-
   .site-navigation-item:hover,
   .site-navigation-item:focus {
       opacity: 0.6;
@@ -306,8 +315,6 @@
   .main-navigation {
       margin: 0 60px;
   }
-
-
 
   .goods-navigation {
       display: flex;
@@ -358,8 +365,6 @@
       background-color:  #f7e296;
       z-index: 5;
   }
-
-
 
   .goods-navigation-item a:hover,
   .goods-navigation-item a:focus {
@@ -605,16 +610,6 @@
       color: #464646;
   }
 
-  /*.slider-item a {*/
-      /*font-family: "Gilroy";*/
-      /*font-size: 18px;*/
-      /*font-weight: 800;*/
-      /*line-height: 24px;*/
-      /*text-transform: uppercase;*/
-      /*letter-spacing: 2.15px;*/
-      /*color: #000000;*/
-  /*}*/
-
   .slider-first-item img {
       margin-top: 51px;
       margin-left: 91px;
@@ -659,13 +654,6 @@
   .slider-third-item th {
       padding-right: 57px;
   }
-
-  /*.slider-controls {*/
-      /*position: absolute;*/
-      /*top:547px;*/
-      /*right: 159px;*/
-      /*z-index: 3;*/
-  /*}*/
 
   .slider input[type="radio"] {
       display: none;
@@ -1028,7 +1016,6 @@
       z-index: 3;
   }
 
-  
   .logotypes-list a::before {
       content: "";
       position: absolute;
@@ -1088,7 +1075,7 @@
       color: #464646;
   }
 
-  .about-us-contacts,
+  .login-link,
   .about-us-info {
       font-family: "Gilroy";
       font-size: 18px;
@@ -1124,7 +1111,6 @@
   }
 
   .companies a {
-
       font-family: "Gilroy";
       font-size: 16px;
       font-weight: 800;
@@ -1182,7 +1168,7 @@
   }
 
   .about-us-info,
-  .about-us-contacts {
+  .login-link {
       display: block;
       padding: 8px 0;
       width: inherit;
@@ -1191,12 +1177,12 @@
   }
 
   .about-us-info:hover,
-  .about-us-contacts:hover {
+  .login-link:hover {
       background-color: #f0c52e;
   }
 
   .about-us-info:active,
-  .about-us-contacts:active {
+  .login-link:active {
       color: rgba(0, 0, 0, 0.3);
   }
 
@@ -1227,17 +1213,17 @@
   }
 
   .appointment-form label {
-      font-family: "Gilroy - Extra Bold";
+      font-family: "Gilroy";
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 800;
       line-height: 24px;
       color: #000000;
   }
 
   .appointment-form button[type="submit"] {
-      font-family: "Gilroy - Extra Bold";
+      font-family: "Gilroy";
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 800;
       line-height: 24px;
       text-transform: uppercase;
       letter-spacing: 3.6px;
@@ -1284,6 +1270,17 @@
       background-color: #ffffff;
       box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
       z-index: 10;
+  }
+
+  .modal-show {
+      display: block;
+      animation-name: bounce;
+      animation-duration: 0.6s;
+  }
+
+  .modal-error {
+      animation-name: shake;
+      animation-duration: 0.6s;
   }
 
   .modal-login-wrapper {
@@ -1365,8 +1362,6 @@
       position: fixed;
   }
 
-
-
   .main-footer {
       background-color: #464646;
   }
@@ -1386,6 +1381,7 @@
       text-transform: uppercase;
       letter-spacing: 0.48px;
       color: #ffc600;
+      margin-left: -2px;
   }
 
   .logo-footer:hover,
@@ -1411,6 +1407,8 @@
   }
 
   .footer-top-item span {
+      padding-left: 6px;
+
       font-family: "Open Sans";
       font-size: 15px;
       font-weight: 300;
@@ -1429,16 +1427,16 @@
       opacity: 0.3;
   }
 
-  .footer-top-item:nth-of-type(2) svg{
+  .footer-link-compare svg{
       fill: #ffc600;
   }
 
-  .footer-top-item:nth-of-type(2) a:hover svg,
+  .footer-link-compare:hover svg,
   .footer-top-item:nth-of-type(2) a:focus svg {
       opacity: 0.6;
   }
 
-  .footer-top-item:nth-of-type(2) a:active svg {
+  .footer-link-compare:active svg {
       opacity: 0.3;
   }
 
@@ -1493,13 +1491,13 @@
 
   .footer-top {
       display: flex;
-      justify-content: space-between;
       padding-top: 50px;
-      padding-bottom: 6px;
+      padding-bottom: 4px;
   }
 
   .footer-user-menu {
       display: flex;
+      flex-wrap: wrap;
       margin: 0;
       padding: 0;
       padding-top: 13px;
@@ -1507,20 +1505,35 @@
       list-style: none;
   }
 
-  .footer-top-item:last-child {
-      padding-left: 40px;
+  .footer-user-list {
+      margin-left: 670px;
   }
 
-  .footer-top-item:nth-child(2) {
-      padding-left: 45px;
+  .main-footer-catalog .footer-user-list {
+      margin-left: 517px;
   }
 
-  .footer-top-item span {
-      padding-left: 5px;
+  .footer-link-exit {
+      padding-left: 20px;
+
+      font-family: "Open Sans";
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 30px;
+      letter-spacing: 0.15px;
+      color: rgba(255, 255, 255, 0.3);
   }
 
-  .footer-top-item:first-child span{
+  .footer-link-user span {
       padding-left: 9px;
+  }
+
+  .footer-store-list {
+      margin-left: auto;
+  }
+
+  .footer-link-cart {
+      margin-left: 40px;
   }
 
   .footer-middle {
@@ -1601,7 +1614,7 @@
   /*КАТАЛОГ catalog.html*/
 
   .catalog-page-header {
-      margin-bottom: 40px;
+      margin-bottom: 37px;
       padding-bottom: 49px;
 
   }
@@ -1610,7 +1623,7 @@
       margin: 0;
       padding: 0;
       margin-left: 60px;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
 
       font-family: "Gilroy";
       font-size: 47px;
@@ -1665,10 +1678,6 @@
       opacity: 0.1;
   }
 
-
-
-
-
   .catalog-columns {
       display: flex;
   }
@@ -1687,9 +1696,6 @@
       height: 100%;
       background-image: linear-gradient(#dbdbdb 70px, #efefef 70px);
   }
-
-
-
 
   .filters-title-wrapper {
       display: flex;
@@ -1718,8 +1724,6 @@
       line-height: 24px;
       letter-spacing: 0.18px;
   }
-
-
 
   .filters-title,
   .filters-wrapper {
@@ -1832,7 +1836,7 @@
   }
 
   .filter-checkbox legend {
-      padding-top: 11px;
+      padding-top: 9px;
       padding-bottom: 17px;
   }
 
@@ -1848,8 +1852,6 @@
       list-style: none;
       padding-top: 16px;
   }
-
-
 
   input[type="checkbox"],
   input[type="radio"] {
@@ -1910,7 +1912,6 @@
       cursor: pointer;
   }
 
-
   input[type="checkbox"] + label:active::before,
   input[type="radio"] + label:active::before {
       opacity: 1;
@@ -1943,27 +1944,11 @@
       opacity: 0.3;
   }
 
-
-
-
-
-
-
-
-
-
   .catalog-wrapper {
       position: relative;
       display: flex;
       flex-direction: column;
       padding-bottom: 76px;
-  }
-
-  .catalog-wrapper::before {
-      content: "";
-      position: absolute;
-
-
   }
 
   .sorting-list-wrapper {
@@ -1984,7 +1969,6 @@
       height: 100%;
       background-color: #ebebeb;
   }
-
 
   .sorting-item-title {
       margin-left: 72px;
@@ -2222,8 +2206,6 @@
       opacity: 1;
   }
 
-
-
   .pagination-item a {
       font-family: "Gilroy";
       font-size: 16px;
@@ -2235,13 +2217,19 @@
   }
 
   .pagination-item:nth-of-type(3) a,
-  .pagination-item:nth-of-type(4) a {
-      opacity: 0.3;
-  }
-
+  .pagination-item:nth-of-type(4) a,
   .pagination-item-backward:active,
   .pagination-item-forward:active {
-      opacity: 0.3;
+      color: rgba(0, 0, 0, 0.3);
+  }
+
+  .pagination-item:not(:first-of-type):not(:last-of-type) a:hover,
+  .pagination-item:not(:first-of-type):not(:last-of-type) a:focus {
+      color: rgba(0, 0, 0, 0.6);
+  }
+
+  .pagination-item:not(:first-of-type):not(:last-of-type) a:active {
+      color: #000000;
   }
 
   .pagination-list {

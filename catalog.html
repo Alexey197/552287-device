@@ -232,7 +232,7 @@
             </div>
             <h3>
               <a class="goods-title" href="#">
-                <span class="catalog-item-title">Селфи-палка «Следуй за<br> мной»</span>
+                <span class="catalog-item-title">Селфи-палка &#171;Следуй за<br>мной&#187;</span>
                 <span class="catalog-item-price">4 900 руб.</span>
               </a>
             </h3>
@@ -253,19 +253,22 @@
     </section>
   </div>
 </main>
-<footer class="main-footer">
+<footer class="main-footer main-footer-catalog">
   <div class="container">
     <div class="footer-top">
-      <p class="logo-footer"><a href="#"><img src="img/logo-footer.png" width="163" height="36" alt="DEVICE"></a></p>
-      <ul class="footer-user-menu">
-        <li class="footer-top-item"><a href="#">
+      <a class="logo-footer" href="#">DEVICE</a>
+      <ul class="footer-user-menu footer-user-list">
+        <li class="footer-top-item"><a class="footer-link-user" href="#">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
 <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
 	C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
 </svg>
-          <span>Войти</span></a></li>
-        <li class="footer-top-item"><a href="#">
+          <span>Валентин Петухов</span></a></li>
+        <li class="footer-top-item"><a href="#" class="footer-link-exit">Выйти</a></li>
+      </ul>
+      <ul class="footer-user-menu footer-store-list">
+        <li class="footer-top-item"><a class="footer-link-compare" href="#">
           <svg version="1.1" id="Layer_1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
 <rect x="8" y="2" width="1.984" height="8"/>
@@ -273,7 +276,7 @@
 <rect x="4" width="2" height="10"/>
             </svg>
           <span>Сравнить</span></a></li>
-        <li class="footer-top-item"><a href="#">
+        <li class="footer-top-item"><a class="footer-link-cart" href="#">
           <svg version="1.1" id="Layer_1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
 <g>
@@ -318,6 +321,7 @@
     </div>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
 
