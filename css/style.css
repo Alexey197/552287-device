@@ -1159,7 +1159,6 @@
       padding-bottom: 60px;
   }
 
-
   .info p:nth-of-type(3),
   .contacts p:nth-of-type(3){
       width: 260px;
@@ -1185,21 +1184,6 @@
   .login-link:active {
       color: rgba(0, 0, 0, 0.3);
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*Модальное окно. Личный кабинет*/
 
   .appointment-form input[type="text"] ,
   .appointment-form input[type="email"],
