@@ -13,9 +13,9 @@
     <div class="main-navigation-wrapper">
       <a class="logo"><img class="logo-img" src="img/logo.png" alt="Логотип Device" width="163" height="36"></a>
       <form class="header-form" action="#" method="get">
-          <input type="search" name="search" class="header-form-search" placeholder="Поиск по сайту">
-            <button class="form-search-btn" type="submit">Найти</button>
-        </form>
+        <input type="search" name="search" class="header-form-search" placeholder="Поиск по сайту">
+        <button class="form-search-btn" type="submit">Найти</button>
+      </form>
       <div class="site-navigation">
         <ul class="site-navigation-list user-navigation-list">
           <li><a class="site-navigation-item navigation-item-user" href="#">Войти</a></li>
@@ -246,42 +246,44 @@
     </div>
   </section>
   <div class="container">
-  <section class="modal modal-login">
-    <h2 class="visually-hidden">Личный кабинет</h2>
-    <form class="appointment-form form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="modal-login-wrapper">
-      <p class="appointment-item">
-        <label for="appointment-name">Ваше имя:</label>
-        <input type="text" name="login" id="appointment-name" placeholder="Имя Фамилия">
-      </p>
-      <p class="appointment-item">
-        <label for="appointment-email">Ваш e-mail:</label>
-        <input type="email" name="email" id="appointment-email" placeholder="email@example.com">
-      </p>
-      <p class="appointment-item">
-        <label for="appointment-letter">Текст письма:</label>
-        <textarea name="latter" id="appointment-letter" placeholder="В свободной форме" rows="7"></textarea>
-      </p>
-        <button class="button" type="submit">отправить</button>
-      </div>
-    </form>
-    <button class="modal-close" type="button">
-      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
-        <path fill="#F0C52E"
-              d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
-      </svg>
-    </button>
-  </section>
-  <section class="modal modal-map">
-    <h2 class="visually-hidden">Карта</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5386.60806563052!2d37.52907762905295!3d55.686453407612774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1535996930277" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <button class="modal-close modal-map-close" type="button">
-      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
-        <path fill="#F0C52E"
-              d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
-      </svg>
-    </button>
-  </section>
+    <section class="modal modal-login">
+      <h2 class="visually-hidden">Личный кабинет</h2>
+      <form class="appointment-form form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-login-wrapper">
+          <p class="appointment-item">
+            <label for="appointment-name">Ваше имя:</label>
+            <input type="text" name="login" id="appointment-name" placeholder="Имя Фамилия">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-email">Ваш e-mail:</label>
+            <input type="email" name="email" id="appointment-email" placeholder="email@example.com">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-letter">Текст письма:</label>
+            <textarea name="latter" id="appointment-letter" placeholder="В свободной форме" rows="7"></textarea>
+          </p>
+          <button class="button" type="submit">отправить</button>
+        </div>
+      </form>
+      <button class="modal-close" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+          <path fill="#F0C52E"
+                d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
+        </svg>
+      </button>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Карта</h2>
+      <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5386.60806563052!2d37.52907762905295!3d55.686453407612774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1535996930277"
+          width="960" height="559" style="border:0" allowfullscreen></iframe>
+      <button class="modal-close modal-map-close" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+          <path fill="#F0C52E"
+                d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
+        </svg>
+      </button>
+    </section>
   </div>
   <footer class="main-footer">
     <div class="container">
@@ -332,12 +334,12 @@
       </div>
       <div class="footer-bottom">
         <ul class="social-buttons">
-          <li><a href="#" class="social-button"><img src="img/facebook.png" width="32" height="32" alt="facebook"
+          <li><a href="#" class="social-button"><img src="img/facebook.svg" width="32" height="32" alt="facebook"
                                                      title="facebook" aria-label="facebook"></a></li>
-          <li><a href="#" class="social-button"><img src="img/instagram.png" width="32" height="32"
+          <li><a href="#" class="social-button"><img src="img/instagram.svg" width="32" height="32"
                                                      alt="instagram" title="instagram" aria-label="instagram"></a>
           </li>
-          <li><a href="#" class="social-button"><img src="img/twitter.png" width="32" height="32" alt="twitter"
+          <li><a href="#" class="social-button"><img src="img/twitter.svg" width="32" height="32" alt="twitter"
                                                      title="twitter" aria-label="twitter"></a></li>
         </ul>
         <p class="copyright">
