@@ -781,17 +781,15 @@
       font-size: 47px;
       font-weight: 800;
       line-height: 48px;
-      letter-spacing: 1.15px;
 
       color: #000000;
   }
 
-  .services-item p:first-of-type {
+  .services-item p {
       font-family: "Open Sans", Arial, sans-serif;
       font-size: 15px;
       font-weight: 300;
       line-height: 30px;
-      letter-spacing: 0.25px;
 
       color: #464646;
   }
@@ -807,37 +805,45 @@
       margin-bottom: 94px;
   }
 
-  .services-container::before {
-      content: "";
-      position: absolute;
-      width: 7px;
-      height: 319px;
-      top: 0;
-      left: 297px;
+  /*.services-container::before {*/
+      /*content: "";*/
+      /*position: absolute;*/
+      /*width: 7px;*/
+      /*height: 319px;*/
+      /*top: 0;*/
+      /*left: 297px;*/
 
-      background-color: #000000;
-  }
+      /*background-color: #000000;*/
+  /*}*/
 
   .services-container > input {
       display: none;
   }
 
   .services-controls {
-      position: absolute;
       display: flex;
       flex-direction: column;
-      top: 81px;
-      left: 24px;
-      width: 155px;
+      padding-right: 150px;
+      padding-top: 80px;
+      padding-bottom: 46px;
+      width: 285px;
+      border-right: 7px solid #000000;
   }
 
-  .services-controls label {
+  .services-controls-text:nth-child(1),
+  .services-controls-text:nth-child(2),
+  .services-controls-text:nth-child(3) {
       position: relative;
-      display: inline-block;
-      padding: 8px 0;
-      margin-bottom: 24px;
+  }
 
-      font-family: "Gilroy";
+  .services-controls-text {
+      margin: 0 0 24px 0;
+      width: 160px;
+      padding: 8px 0;
+
+
+      text-align: center;
+      font-family: "Gilroy", Arial, sans-serif;
       font-size: 18px;
       font-weight: 800;
       line-height: 24px;
@@ -846,13 +852,25 @@
       color: #000000;
       cursor: pointer;
       background-image: linear-gradient(to bottom, transparent 15px, #f0c52e 15px, #f0c52e 23px,transparent 23px );
-      text-align: center;
   }
 
-  .services-container label::after {
+  .services-controls-text:nth-child(1) label,
+  .services-controls-text:nth-child(2) label {
+      margin-left: 14px;
+  }
+
+  .services-controls-text:nth-child(3) label {
+      margin-left: 3px;
+  }
+
+
+  .services-controls-text:nth-child(1)::after,
+  .services-controls-text:nth-child(2)::after,
+  .services-controls-text:nth-child(3)::after {
       content: "";
       position: absolute;
       top: 0;
+      left: 150px;
       width: 135px;
       height: 40px;
       visibility: hidden;
@@ -860,14 +878,14 @@
       background-color: #000000;
   }
 
-  .services-container label:nth-child(2)::after,
-  .services-container label:nth-child(3)::after {
-      left: 145px;
-  }
+  /*.services-container label:nth-child(2)::after,*/
+  /*.services-container label:nth-child(3)::after {*/
+      /*left: 145px;*/
+  /*}*/
 
 
-  .services-container label:hover,
-  .services-container label:focus {
+  .services-controls-text:hover,
+  .services-controls-text:focus {
       background-color: #f0c52e;
   }
 
@@ -878,10 +896,14 @@
   }
 
   .services-item {
-      margin-left: 284px;
+      /*margin-left: 284px;*/
       padding-left: 118px;
       padding-top: 74px;
-      padding-bottom: 77px;
+      /*padding-bottom: 77px;*/
+  }
+
+  .services-item h3 {
+      padding-bottom: 30px;
   }
 
   .services-delivery {
@@ -890,41 +912,35 @@
       background-position: 675px  84px;
   }
 
-  .services-item h3 {
-      padding-bottom: 30px;
+  .services-delivery h3 {
+      letter-spacing: 0.8px;
   }
 
   .services-delivery p {
       padding-right: 320px;
+      letter-spacing: 0.25px;
   }
 
   .services-delivery {
       position: relative;
   }
 
-  .credit,
   .warranty {
-      position: absolute;
-      margin: 0;
-      left:0;
-
-  }
-
-  .warranty {
-      left: 302px;
-
       background-image: url('../img/warranty.svg');
       background-repeat: no-repeat;
       background-position: 660px  60px;
   }
 
+  .warranty h3 {
+      letter-spacing: 0.5px;
+  }
+
   .warranty p {
-      padding-right: 320px;
+      padding-right: 315px;
+      letter-spacing: 0.19px;
   }
 
   .credit {
-      left: 304px;
-
       background-image: url('../img/credit.svg');
       background-repeat: no-repeat;
       background-position: 652px  60px;
@@ -932,53 +948,69 @@
 
 
   .credit p{
-      padding-right: 345px;
+      padding-right: 320px;
+      letter-spacing: 0.25px;
+  }
+
+
+  #services-slide1:checked ~ .services-controls .services-controls-text:nth-child(1)::after,
+  #services-slide2:checked ~ .services-controls .services-controls-text:nth-child(2)::after,
+  #services-slide3:checked ~ .services-controls .services-controls-text:nth-child(3)::after{
+      visibility: visible;
+  }
+
+  #services-slide1:checked ~ .services-controls .services-controls-text:nth-child(1),
+  #services-slide2:checked ~ .services-controls .services-controls-text:nth-child(2),
+  #services-slide3:checked ~ .services-controls .services-controls-text:nth-child(3) {
+      background: #000000 none;
+      color: #f7e185;
   }
 
   .credit,
   .services-delivery,
   .warranty {
-      opacity: 0;
+      display: none;
   }
 
-  #services-slide1:checked ~ .services-delivery {
-      opacity: 1;
-  }
-
-  #services-slide1:checked ~ .services-controls  label:first-child::after {
-      visibility: visible;
-  }
-
-  #services-slide1:checked ~ .services-controls label:first-child {
-      background: #000000 none;
-      color: #f7e185;
-  }
-
-  #services-slide2:checked ~ .warranty {
-      opacity: 1;
-  }
-
-  #services-slide2:checked ~ .services-controls  label:nth-child(2)::after {
-      visibility: visible;
-  }
-
-  #services-slide2:checked ~ .services-controls label:nth-child(2) {
-      background: #000000 none;
-      color: #f7e185;
-  }
-
+  #services-slide1:checked ~ .services-delivery,
+  #services-slide2:checked ~ .warranty,
   #services-slide3:checked ~ .credit {
-      opacity: 1;
+      display: block;
   }
 
-  #services-slide3:checked ~ .services-controls  label:nth-child(3)::after {
-      visibility: visible;
-  }
+  /*#services-slide2:checked ~ .warranty {*/
+      /*opacity: 1;*/
+  /*}*/
 
-  #services-slide3:checked ~ .services-controls label:nth-child(3) {
-      background: #000000 none;
-      color: #f7e185;
-  }
+  /*#services-slide2:checked ~ .services-controls .services-controls-text:nth-child(2)::after {*/
+      /*visibility: visible;*/
+  /*}*/
+
+  /*#services-slide2:checked ~ .services-controls label:nth-child(2) {*/
+      /*background: #000000 none;*/
+      /*color: #f7e185;*/
+  /*}*/
+
+  /*#services-slide3:checked ~ .credit {*/
+      /*opacity: 1;*/
+  /*}*/
+
+  /*#services-slide3:checked ~ .warranty {*/
+      /*display: none;*/
+  /*}*/
+
+  /*#services-slide3:checked ~ .services-delivery {*/
+      /*display: none;*/
+  /*}*/
+
+  /*#services-slide3:checked ~ .services-controls .services-controls-text:nth-child(3)::after {*/
+      /*visibility: visible;*/
+  /*}*/
+
+  /*#services-slide3:checked ~ .services-controls label:nth-child(3) {*/
+      /*background: #000000 none;*/
+      /*color: #f7e185;*/
+  /*}*/
 
   .logotypes-list {
       display: flex;
