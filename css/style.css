@@ -805,17 +805,6 @@
       margin-bottom: 94px;
   }
 
-  /*.services-container::before {*/
-      /*content: "";*/
-      /*position: absolute;*/
-      /*width: 7px;*/
-      /*height: 319px;*/
-      /*top: 0;*/
-      /*left: 297px;*/
-
-      /*background-color: #000000;*/
-  /*}*/
-
   .services-container > input {
       display: none;
   }
@@ -863,7 +852,6 @@
       margin-left: 3px;
   }
 
-
   .services-controls-text:nth-child(1)::after,
   .services-controls-text:nth-child(2)::after,
   .services-controls-text:nth-child(3)::after {
@@ -878,12 +866,6 @@
       background-color: #000000;
   }
 
-  /*.services-container label:nth-child(2)::after,*/
-  /*.services-container label:nth-child(3)::after {*/
-      /*left: 145px;*/
-  /*}*/
-
-
   .services-controls-text:hover,
   .services-controls-text:focus {
       background-color: #f0c52e;
@@ -896,10 +878,8 @@
   }
 
   .services-item {
-      /*margin-left: 284px;*/
       padding-left: 118px;
       padding-top: 74px;
-      /*padding-bottom: 77px;*/
   }
 
   .services-item h3 {
@@ -977,40 +957,6 @@
   #services-slide3:checked ~ .credit {
       display: block;
   }
-
-  /*#services-slide2:checked ~ .warranty {*/
-      /*opacity: 1;*/
-  /*}*/
-
-  /*#services-slide2:checked ~ .services-controls .services-controls-text:nth-child(2)::after {*/
-      /*visibility: visible;*/
-  /*}*/
-
-  /*#services-slide2:checked ~ .services-controls label:nth-child(2) {*/
-      /*background: #000000 none;*/
-      /*color: #f7e185;*/
-  /*}*/
-
-  /*#services-slide3:checked ~ .credit {*/
-      /*opacity: 1;*/
-  /*}*/
-
-  /*#services-slide3:checked ~ .warranty {*/
-      /*display: none;*/
-  /*}*/
-
-  /*#services-slide3:checked ~ .services-delivery {*/
-      /*display: none;*/
-  /*}*/
-
-  /*#services-slide3:checked ~ .services-controls .services-controls-text:nth-child(3)::after {*/
-      /*visibility: visible;*/
-  /*}*/
-
-  /*#services-slide3:checked ~ .services-controls label:nth-child(3) {*/
-      /*background: #000000 none;*/
-      /*color: #f7e185;*/
-  /*}*/
 
   .logotypes-list {
       display: flex;
@@ -1316,7 +1262,6 @@
       border: none;
   }
 
-
   .modal-login input[type="text"],
   .modal-login input[type="email"] {
       width: 360px;
@@ -1393,6 +1338,7 @@
 
   .logo-footer {
       margin-top: 20px;
+      margin-left: -2px;
 
       font-family: "Gilroy", Arial, sans-serif;
       font-size: 48px;
@@ -1400,7 +1346,6 @@
       text-transform: uppercase;
       letter-spacing: 0.48px;
       color: #ffc600;
-      margin-left: -2px;
   }
 
   .logo-footer:hover,
