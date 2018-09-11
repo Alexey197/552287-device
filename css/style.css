@@ -1,4 +1,4 @@
-  @font-face{
+  @font-face {
       font-family: "Gilroy";
       font-weight: 300;
       font-style: normal;
@@ -8,7 +8,7 @@
       url("../fonts/gilroylight.woff") format("woff");
   }
 
-  @font-face{
+  @font-face {
       font-family: "Gilroy";
       font-weight: 800;
       font-style: normal;
@@ -161,6 +161,7 @@
   }
 
   .form-search-btn {
+      position: relative;
       padding: 9px 19px;
 
       font-family: "Open Sans", Arial, sans-serif;
@@ -181,8 +182,8 @@
       content: "";
       position: absolute;
       top:48px;
-      right: 1px;
-      width: 440px;
+      right: -2px;
+      width: 442px;
       height: 2px;
       background-color: #000000;
   }
@@ -312,10 +313,6 @@
       opacity: 0.3;
   }
 
-  .main-navigation {
-      margin: 0 60px;
-  }
-
   .goods-navigation {
       display: flex;
       flex-wrap: wrap;
@@ -327,15 +324,19 @@
 
   .goods-navigation-item:nth-of-type(1) {
       position: relative;
-      margin-right: 322px;
+      margin-left: 60px;
   }
 
   .goods-navigation-item:nth-of-type(2) {
-      margin-right: 34px;
+      margin-left: 322px;
   }
 
   .goods-navigation-item:nth-of-type(3) {
-      margin-right: auto;
+      margin-left: 34px;
+  }
+
+  .goods-navigation-item:nth-of-type(4) {
+    margin-left: 109px;
   }
 
   .goods-navigation-item>a{
@@ -812,10 +813,10 @@
   .services-controls {
       display: flex;
       flex-direction: column;
-      padding-right: 150px;
+      padding-right: 117px;
       padding-top: 80px;
-      padding-bottom: 46px;
-      width: 285px;
+      padding-bottom: 44px;
+      /*width: 285px;*/
       border-right: 7px solid #000000;
   }
 
@@ -826,7 +827,7 @@
   }
 
   .services-controls-text {
-      margin: 0 0 24px 0;
+      margin: 0 0 25px 0;
       width: 160px;
       padding: 8px 0;
 
@@ -843,9 +844,13 @@
       background-image: linear-gradient(to bottom, transparent 15px, #f0c52e 15px, #f0c52e 23px,transparent 23px );
   }
 
-  .services-controls-text:nth-child(1) label,
+  .services-controls-text:nth-child(1) label {
+      margin-left: 4px;
+  }
+
   .services-controls-text:nth-child(2) label {
-      margin-left: 14px;
+      margin-left: 4px;
+
   }
 
   .services-controls-text:nth-child(3) label {
@@ -859,7 +864,7 @@
       position: absolute;
       top: 0;
       left: 150px;
-      width: 135px;
+      width: 132px;
       height: 40px;
       visibility: hidden;
 
@@ -966,7 +971,7 @@
       margin: 0;
       padding: 0;
   }
-  
+
   .logotypes-list {
       position: relative;
   }
@@ -1581,7 +1586,7 @@
       margin-left: 60px;
       margin-bottom: 20px;
 
-      font-family: "Gilroy";
+      font-family: "Gilroy", Arial, sans-serif;
       font-size: 47px;
       font-weight: 800;
       line-height: 48px;
@@ -2112,10 +2117,13 @@
       width: 200px;
       text-align: center;
   }
-
-  .catalog-item-basket a {
+  
+  .btn-catalog-item {
       display: block;
+      width: 200px;
       padding: 8px 0;
+      margin-left: auto;
+      margin-right: auto;
 
       font-family: "Gilroy", Arial, sans-serif;
       font-size: 18px;
@@ -2124,15 +2132,17 @@
       text-transform: uppercase;
       letter-spacing: 3.6px;
       color: #000000;
+      background-color: transparent;
       background-image: linear-gradient(to bottom, transparent 15px, #f0c52e 15px,#f0c52e 23px,transparent 23px );
+      border: none;
   }
 
-  .catalog-item-basket a:hover,
-  .catalog-item-basket a:focus {
+  .btn-catalog-item:hover,
+  .btn-catalog-item:focus {
       background: #f0c52e none;
   }
 
-  .catalog-item-basket a:active span{
+  .btn-catalog-item:active span{
       opacity: 0.3;
   }
 
@@ -2240,6 +2250,11 @@
       background-color: #d9d9d9;
   }
 
+  .pagination-item-backward a:active,
+  .pagination-item-forward a:active {
+      color: rgba(0, 0, 0, 0.3);
+  }
+
   .pagination-item:nth-child(2) a {
       margin-left: 206px;
   }
@@ -2248,6 +2263,10 @@
   .pagination-item:nth-child(4) a {
       margin-left: 28px;
   }
+  
+
+
+
 
 
 
