@@ -55,7 +55,7 @@
       margin: 0;
       padding: 0;
 
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 15px;
       line-height: 30px;
       font-weight: 300;
@@ -131,7 +131,7 @@
 
 
   input[type="search"] {
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 15px;
       font-weight: 300;
       line-height: 30px;
@@ -164,7 +164,7 @@
       position: relative;
       padding: 9px 19px;
 
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 15px;
       font-weight: 300;
       line-height: 30px;
@@ -217,7 +217,7 @@
   }
 
   .site-navigation-item {
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 15px;
       font-weight: 300;
       line-height: 30px;
@@ -342,7 +342,7 @@
   .goods-navigation-item>a{
       display: block;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 800;
       line-height: 24px;
@@ -415,7 +415,7 @@
   }
 
   .appearing-menu-wrapper a {
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 15px;
       font-weight: 300;
       line-height: 36px;
@@ -468,7 +468,7 @@
       padding-top: 132px;
       padding-bottom: 18px;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 47px;
       font-weight: 800;
       line-height: 56px;
@@ -493,7 +493,7 @@
       top: 39px;
       left: 330px;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 179px;
       font-weight: 800;
       line-height: 179.2px;
@@ -518,7 +518,7 @@
   .slider-item p:nth-of-type(2) {
       padding-bottom: 43px;
 
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 15px;
       font-weight: 300;
       line-height: 30px;
@@ -536,7 +536,7 @@
       display: block;
       padding: 8px 0;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 800;
       line-height: 24px;
@@ -581,7 +581,7 @@
       padding-right: 75px;
       padding-bottom: 5px;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 36px;
       font-weight: 300;
       line-height: 48px;
@@ -591,7 +591,7 @@
   .slider-feature td {
       margin: 0;
       padding: 0;
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 13px;
       font-weight: 300;
       line-height: 20px;
@@ -726,7 +726,7 @@
       width: inherit;
       height: inherit;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 800;
       line-height: 24px;
@@ -778,7 +778,7 @@
   .services-item h3 {
       width: 250px;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 47px;
       font-weight: 800;
       line-height: 48px;
@@ -787,7 +787,7 @@
   }
 
   .services-item p {
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 15px;
       font-weight: 300;
       line-height: 30px;
@@ -816,7 +816,7 @@
       padding-right: 117px;
       padding-top: 80px;
       padding-bottom: 44px;
-      /*width: 285px;*/
+    
       border-right: 7px solid #000000;
   }
 
@@ -833,7 +833,7 @@
 
 
       text-align: center;
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 800;
       line-height: 24px;
@@ -1020,7 +1020,7 @@
       padding: 0;
       padding-bottom: 43px;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 47px;
       font-weight: 800;
       line-height: 48px;
@@ -1033,7 +1033,7 @@
       margin: 0;
       padding: 0;
 
-      font-family: 'Open Sans', Arial, sans-serif;
+      font-family: 'Open Sans', "Arial", sans-serif;
       font-weight: 300;
       letter-spacing: 0.1px;
       color: #464646;
@@ -1041,7 +1041,7 @@
 
   .login-link,
   .about-us-info {
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 800;
       line-height: 24px;
@@ -1075,7 +1075,7 @@
   }
 
   .companies a {
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 16px;
       font-weight: 800;
       line-height: 40px;
@@ -1152,7 +1152,7 @@
   .appointment-form input[type="text"] ,
   .appointment-form input[type="email"],
   .appointment-form textarea {
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 18px;
@@ -1161,7 +1161,7 @@
   }
 
   .appointment-form label {
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 800;
       line-height: 24px;
@@ -1169,7 +1169,7 @@
   }
 
   .appointment-form button[type="submit"] {
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 800;
       line-height: 24px;
@@ -1308,6 +1308,8 @@
       position: absolute;
       top: 23px;
       right: 15px;
+      
+      background-color: transparent;
   }
 
   .modal-login .button {
@@ -1345,7 +1347,7 @@
       margin-top: 20px;
       margin-left: -2px;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 48px;
       font-weight: 800;
       text-transform: uppercase;
@@ -1378,7 +1380,7 @@
   .footer-top-item span {
       padding-left: 6px;
 
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 15px;
       font-weight: 300;
       line-height: 30px;
@@ -1414,7 +1416,7 @@
   }
 
   .footer-site-menu a {
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 800;
       line-height: 24px;
@@ -1484,7 +1486,7 @@
   .footer-link-exit {
       padding-left: 20px;
 
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 15px;
       font-weight: 300;
       line-height: 30px;
@@ -1586,7 +1588,7 @@
       margin-left: 60px;
       margin-bottom: 20px;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 47px;
       font-weight: 800;
       line-height: 48px;
@@ -1612,7 +1614,7 @@
   .breadcrumbs a {
       padding-right: 10px;
 
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 14px;
       font-weight: 300;
       line-height: 24px;
@@ -1664,7 +1666,7 @@
       margin: 0;
       padding: 0;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 16px;
       font-weight: 800;
       line-height: 24px;
@@ -1677,7 +1679,7 @@
 
   .filter legend {
       color: #000000;
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 800;
       line-height: 24px;
@@ -1741,7 +1743,7 @@
 
       color: #000000;
       opacity: 0.2;
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 14px;
       font-weight: 300;
       line-height: 24px;
@@ -1829,7 +1831,7 @@
       padding-left: 39px;
 
       color: #000000;
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 14px;
       font-weight: 300;
       line-height: 40px;
@@ -1889,7 +1891,7 @@
 
       text-align: center;
       color: #000000;
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 800;
       text-transform: uppercase;
@@ -1938,7 +1940,7 @@
   .sorting-item-title {
       margin-left: 72px;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 16px;
       font-weight: 800;
       line-height: 24px;
@@ -2048,7 +2050,7 @@
   .goods-title {
       max-width: 260px;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 800;
       line-height: 24px;
@@ -2059,7 +2061,7 @@
   .catalog-item-price {
       margin-left: auto;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 16px;
       font-weight: 300;
       line-height: 24px;
@@ -2101,7 +2103,7 @@
       border: 2px solid #000000;
       border-radius: 50%;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 14px;
       font-weight: 800;
       line-height: 61px;
@@ -2125,7 +2127,7 @@
       margin-left: auto;
       margin-right: auto;
 
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 800;
       line-height: 24px;
@@ -2147,7 +2149,7 @@
   }
 
   .catalog-item-compare a {
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       font-size: 13px;
       font-weight: 300;
       line-height: 36px;
@@ -2195,7 +2197,7 @@
   }
 
   .pagination-item a {
-      font-family: "Gilroy", Arial, sans-serif;
+      font-family: "Gilroy", "Arial", sans-serif;
       font-size: 16px;
       font-weight: 800;
       line-height: 24px;
