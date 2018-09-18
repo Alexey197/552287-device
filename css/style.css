@@ -570,7 +570,7 @@
 
   .slider-controls {
       position: absolute;
-      top:370px;
+      top:367px;
       right: 87px;
       z-index: 3;
   }
@@ -648,6 +648,7 @@
 
   .slider-controls label{
       display: inline-block;
+      vertical-align: middle;
       width: 13px;
       height: 13px;
       margin-right: 15px;
