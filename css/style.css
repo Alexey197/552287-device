@@ -648,11 +648,11 @@
 
   .slider-controls label{
       display: inline-block;
-      vertical-align: middle;
       width: 13px;
       height: 13px;
       margin-right: 15px;
-
+  
+      vertical-align: middle;
       background: url("../img/slider-button-empty.svg") no-repeat;
       background-size: 12px;
       cursor: pointer;
@@ -1823,13 +1823,13 @@
 
   input[type="checkbox"],
   input[type="radio"] {
-      display: none;
+      opacity: 0;
   }
 
   input[type="checkbox"] + label,
   input[type="radio"] + label {
       position: relative;
-      padding-left: 39px;
+      padding-left: 21px;
 
       color: #000000;
       font-family: "Open Sans", "Arial", sans-serif;
@@ -1839,11 +1839,12 @@
       letter-spacing: 0.14px;
   }
 
+  input[type="checkbox"] + label::before,
   input[type="checkbox"] + label::before {
       content: "";
       position: absolute;
-      left: -1px;
-      top: -3px;
+      left: -17px;
+      top: -2px;
 
       width: 27px;
       height: 23px;
@@ -1855,13 +1856,18 @@
   input[type="radio"] + label::before {
       content: "";
       position: absolute;
-      left: -1px;
-      top: -3px;
+      left: -17px;
+      top: -2px;
       width: 26px;
       height: 26px;
 
       background-image: url("../img/radio-off.svg");
       background-repeat: no-repeat;
+  }
+
+  input[type="radio"]:focus + label::before,
+  input[type="checkbox"]:focus + label::before {
+      outline: rgb(59, 153, 252) auto 5px;
   }
 
   input[type="checkbox"]:checked + label::before {
